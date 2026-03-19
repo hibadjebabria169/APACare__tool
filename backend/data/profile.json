@@ -1,0 +1,87 @@
+{
+  "patient": {
+    "id": "patient_demo_001",
+    "name": "Marie",
+    "age": 52,
+    "disease": "BreastCancer",
+    "resting_hr": 50,
+    "ecog": 1,
+    "fatigue": "none_mild",
+    "location": "Orléans, Centre–Val de Loire",
+    "preferences": {
+      "likes_walking": true,
+      "likes_swimming": false,
+      "likes_gym": true
+    }
+  },
+  "kg_result": {
+    "profiles": [
+      {
+        "id": "profile_bc_ecog01_no_severe_fatigue",
+        "label": "Breast cancer, ECOG 0–1, no severe fatigue"
+      }
+    ],
+    "recommended_activities": [
+      {
+        "id": "act_moderate_walking_30min",
+        "label": "30 min moderate walking"
+      }
+    ],
+    "contraindicated_activities": [],
+    "safe_activities": [
+      {
+        "id": "act_moderate_walking_30min",
+        "label": "30 min moderate walking"
+      }
+    ]
+  },
+  "activity_centers": [
+    {
+      "activity_id": "act_moderate_walking_30min",
+      "activity_label": "30 min moderate walking",
+      "agent_query": "30 min moderate walking",
+      "centers": [
+        {
+          "id": "walk_001",
+          "name": "Parc de la Tête d’Or",
+          "city": "Lyon",
+          "region": "Auvergne-Rhône-Alpes",
+          "type": "Parc urbain",
+          "duration_suggested": "30–60 min",
+          "accessibility": "Excellent",
+          "schedule": "6h00–20h00",
+          "price": "Gratuit",
+          "phone": "04 72 69 47 60",
+          "address": "Place Général Leclerc, 69006 Lyon"
+        },
+        {
+          "id": "walk_002",
+          "name": "Jardin du Luxembourg",
+          "city": "Orléans",
+          "region": "Île-de-France",
+          "type": "Jardin public",
+          "duration_suggested": "20–45 min",
+          "accessibility": "Très bon",
+          "schedule": "7h30–21h30",
+          "price": "Gratuit",
+          "phone": "01 42 34 20 00",
+          "address": "Rue de Médicis, 75006 Paris"
+        },
+        {
+          "id": "walk_003",
+          "name": "Parc Borély",
+          "city": "Blois",
+          "region": "Provence-Alpes-Côte d'Azur",
+          "type": "Parc municipal",
+          "duration_suggested": "30–90 min",
+          "accessibility": "Excellent",
+          "schedule": "24h/24",
+          "price": "Gratuit",
+          "phone": "04 91 55 33 00",
+          "address": "Avenue du Prado, 13008 Marseille"
+        }
+      ],
+      "total_centers_found": 3
+    }
+  ]
+}

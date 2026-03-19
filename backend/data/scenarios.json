@@ -1,0 +1,107 @@
+{
+  "scenarios": [
+    {
+      "id": "marie_good_day",
+      "description": "Baseline day: ECOG 1, none/mild fatigue, resting HR 52 bpm. Walking is allowed.",
+      "patient": {
+        "id": "patient_demo_001",
+        "name": "Marie",
+        "age": 52,
+        "disease": "BreastCancer",
+        "resting_hr": 52,
+        "ecog": 1,
+        "fatigue": "none_mild",
+        "location": "Orléans, Centre–Val de Loire",
+        "preferences": {
+          "likes_walking": true,
+          "likes_swimming": false,
+          "likes_gym": true
+        }
+      },
+      "kg_result": {
+        "profiles": [
+          {
+            "id": "profile_bc_ecog01_no_severe_fatigue",
+            "label": "Breast cancer, ECOG 0–1, no severe fatigue"
+          }
+        ],
+        "recommended_activities": [
+          {
+            "id": "act_moderate_walking_30min",
+            "label": "30 min moderate walking"
+          }
+        ],
+        "contraindicated_activities": [],
+        "safe_activities": [
+          {
+            "id": "act_moderate_walking_30min",
+            "label": "30 min moderate walking"
+          }
+        ]
+      },
+      "activity_centers": [
+        {
+          "activity_id": "act_moderate_walking_30min",
+          "activity_label": "30 min moderate walking",
+          "agent_query": "30 min moderate walking",
+          "total_centers_found": 2,
+          "centers": [
+            {
+              "id": "walk_orleans_001",
+              "name": "Parc de la Source – Groupe de marche adaptée",
+              "city": "Orléans",
+              "region": "Centre–Val de Loire",
+              "type": "Parc urbain / promenade encadrée",
+              "activity_label": "Marche modérée 30 min",
+              "distance_km": 3.2,
+              "schedule": "Mardi & Jeudi 18h00–18h45",
+              "price": "Gratuit, sur inscription",
+              "phone": "02 38 00 11 22",
+              "address": "Avenue du Parc Floral, 45100 Orléans"
+            },
+            {
+              "id": "walk_tours_001",
+              "name": "Promenade APA – Berges de Loire",
+              "city": "Tours",
+              "region": "Centre–Val de Loire",
+              "type": "Programme d'activité physique adaptée",
+              "activity_label": "Marche modérée 30–40 min",
+              "distance_km": 78.0,
+              "schedule": "Lundi 17h30–18h15, Samedi 10h00–10h45",
+              "price": "5€ / séance",
+              "phone": "02 47 12 34 56",
+              "address": "Quai de la Loire, 37000 Tours"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marie_bad_day",
+      "description": "Bad day / alert: ECOG 1, severe fatigue, resting HR 95 bpm. Walking session is no longer recommended.",
+      "patient": {
+        "id": "patient_demo_001",
+        "name": "Marie",
+        "age": 52,
+        "disease": "BreastCancer",
+        "resting_hr": 95,
+        "ecog": 1,
+        "fatigue": "severe",
+        "location": "Orléans, Centre–Val de Loire",
+        "preferences": {
+          "likes_walking": true,
+          "likes_swimming": false,
+          "likes_gym": true
+        }
+      },
+      "kg_result": {
+        "profiles": [],
+        "recommended_activities": [],
+        "contraindicated_activities": [],
+        "safe_activities": []
+      },
+      "activity_centers": [],
+      "note": "In this scenario, because of severe fatigue and high resting heart rate, the previous profile (ECOG 0–1 + no severe fatigue) is not matched, so the 30 min walking session is not recommended. The app should show that no activities are currently safe and advise medical review or rest."
+    }
+  ]
+}

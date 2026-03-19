@@ -1,0 +1,4083 @@
+{
+  "resourceType": "Bundle",
+  "id": "ff736704-285d-481b-b7bb-63d8e9a371c5",
+  "type": "collection",
+  "timestamp": "2026-02-11T15:31:19.338163Z",
+  "total": 80,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Library",
+        "id": "oncology-kg-library",
+        "url": "http://example.org/fhir/Library/oncology-kg",
+        "version": "2024-01",
+        "name": "OncologyKnowledgeGraphLibrary",
+        "title": "Oncology Physical Activity Knowledge Graph Library",
+        "status": "active",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/library-type",
+              "code": "logic-library"
+            }
+          ]
+        },
+        "date": "2026-02-11",
+        "publisher": "Oncology KG Project",
+        "description": "FHIR Library containing oncology physical activity recommendation knowledge",
+        "relatedArtifact": [
+          {
+            "type": "derived-from",
+            "display": "SNOMED CT",
+            "url": "http://snomed.info/sct"
+          },
+          {
+            "type": "derived-from",
+            "display": "ACSM Exercise Guidelines for Cancer Survivors",
+            "citation": "ACSM Guidelines 2019"
+          },
+          {
+            "type": "derived-from",
+            "display": "NCCN Clinical Practice Guidelines",
+            "citation": "NCCN Guidelines"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CodeSystem",
+        "id": "oncology-kg-codes",
+        "url": "http://example.org/fhir/CodeSystem/oncology-kg",
+        "version": "2024-01",
+        "name": "OncologyKnowledgeGraphCodeSystem",
+        "title": "Oncology Knowledge Graph Code System",
+        "status": "active",
+        "experimental": true,
+        "date": "2026-02-11",
+        "publisher": "Oncology KG Project",
+        "description": "Code system for oncology physical activity recommendations",
+        "content": "complete",
+        "count": 45,
+        "concept": [
+          {
+            "code": "breast_cancer",
+            "display": "Breast Cancer",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant neoplasm of breast"
+              }
+            ]
+          },
+          {
+            "code": "lung_cancer",
+            "display": "Lung Cancer",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant neoplasm of lung"
+              }
+            ]
+          },
+          {
+            "code": "colorectal_cancer",
+            "display": "Colorectal Cancer",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant tumor of colon"
+              }
+            ]
+          },
+          {
+            "code": "prostate_cancer",
+            "display": "Prostate Cancer",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant tumor of prostate"
+              }
+            ]
+          },
+          {
+            "code": "lymphoma",
+            "display": "Lymphoma",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant lymphoma"
+              }
+            ]
+          },
+          {
+            "code": "leukemia",
+            "display": "Leukemia",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Leukemia"
+              }
+            ]
+          },
+          {
+            "code": "ovarian_cancer",
+            "display": "Ovarian Cancer",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant tumor of ovary"
+              }
+            ]
+          },
+          {
+            "code": "pancreatic_cancer",
+            "display": "Pancreatic Cancer",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant tumor of pancreas"
+              }
+            ]
+          },
+          {
+            "code": "gastric_cancer",
+            "display": "Gastric Cancer",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant tumor of stomach"
+              }
+            ]
+          },
+          {
+            "code": "melanoma",
+            "display": "Melanoma",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant melanoma"
+              }
+            ]
+          },
+          {
+            "code": "thyroid_cancer",
+            "display": "Thyroid Cancer",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant tumor of thyroid gland"
+              }
+            ]
+          },
+          {
+            "code": "bladder_cancer",
+            "display": "Bladder Cancer",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant tumor of urinary bladder"
+              }
+            ]
+          },
+          {
+            "code": "kidney_cancer",
+            "display": "Kidney Cancer",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant tumor of kidney"
+              }
+            ]
+          },
+          {
+            "code": "brain_cancer",
+            "display": "Brain Cancer",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant neoplasm of brain"
+              }
+            ]
+          },
+          {
+            "code": "cervical_cancer",
+            "display": "Cervical Cancer",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant tumor of cervix"
+              }
+            ]
+          },
+          {
+            "code": "esophageal_cancer",
+            "display": "Esophageal Cancer",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant tumor of esophagus"
+              }
+            ]
+          },
+          {
+            "code": "liver_cancer",
+            "display": "Liver Cancer (HCC)",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant tumor of liver"
+              }
+            ]
+          },
+          {
+            "code": "multiple_myeloma",
+            "display": "Multiple Myeloma",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Multiple myeloma"
+              }
+            ]
+          },
+          {
+            "code": "head_neck_cancer",
+            "display": "Head and Neck Cancer",
+            "designation": [
+              {
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001"
+                },
+                "value": "Malignant tumor of head and neck"
+              }
+            ]
+          },
+          {
+            "code": "walking_light",
+            "display": "Light Walking 15-20 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 2.5
+              }
+            ]
+          },
+          {
+            "code": "walking_moderate",
+            "display": "Moderate Walking 30 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "moderate"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 3.5
+              }
+            ]
+          },
+          {
+            "code": "yoga_gentle",
+            "display": "Gentle Yoga 20-30 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 2.5
+              }
+            ]
+          },
+          {
+            "code": "yoga_chair",
+            "display": "Chair Yoga 15-20 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "very_light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 2.0
+              }
+            ]
+          },
+          {
+            "code": "aquagym",
+            "display": "Aquagym 30 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "moderate"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 4.0
+              }
+            ]
+          },
+          {
+            "code": "swimming_light",
+            "display": "Light Swimming 20 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 3.0
+              }
+            ]
+          },
+          {
+            "code": "breathing_exercises",
+            "display": "Breathing Exercises 15 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "very_light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 1.5
+              }
+            ]
+          },
+          {
+            "code": "stretching",
+            "display": "Stretching 15-20 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "very_light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 2.0
+              }
+            ]
+          },
+          {
+            "code": "cycling_stationary",
+            "display": "Stationary Cycling 20 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "moderate"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 4.0
+              }
+            ]
+          },
+          {
+            "code": "strength_light",
+            "display": "Light Strength Training 15 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 3.0
+              }
+            ]
+          },
+          {
+            "code": "relaxation",
+            "display": "Guided Relaxation 15 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "very_light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 1.0
+              }
+            ]
+          },
+          {
+            "code": "tai_chi",
+            "display": "Tai Chi 20-30 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 2.5
+              }
+            ]
+          },
+          {
+            "code": "balance_training",
+            "display": "Balance Training 15 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 2.0
+              }
+            ]
+          },
+          {
+            "code": "aerobic_light",
+            "display": "Light Aerobic Exercise 20 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 3.0
+              }
+            ]
+          },
+          {
+            "code": "resistance_bands",
+            "display": "Resistance Band Exercise 15 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 2.5
+              }
+            ]
+          },
+          {
+            "code": "nordic_walking",
+            "display": "Nordic Walking 30 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "moderate"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 4.5
+              }
+            ]
+          },
+          {
+            "code": "pilates_gentle",
+            "display": "Gentle Pilates 20 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 2.5
+              }
+            ]
+          },
+          {
+            "code": "qigong",
+            "display": "Qigong 20 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "very_light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 2.0
+              }
+            ]
+          },
+          {
+            "code": "meditation",
+            "display": "Guided Meditation 15 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "very_light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 1.0
+              }
+            ]
+          },
+          {
+            "code": "gardening_light",
+            "display": "Light Gardening 20-30 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 2.5
+              }
+            ]
+          },
+          {
+            "code": "dance_therapy",
+            "display": "Dance/Movement Therapy 20 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 3.0
+              }
+            ]
+          },
+          {
+            "code": "hydrotherapy",
+            "display": "Hydrotherapy 30 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 2.5
+              }
+            ]
+          },
+          {
+            "code": "seated_exercises",
+            "display": "Seated Exercises 15 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "very_light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 1.5
+              }
+            ]
+          },
+          {
+            "code": "arm_ergometer",
+            "display": "Arm Ergometer 15 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 2.5
+              }
+            ]
+          },
+          {
+            "code": "recumbent_cycling",
+            "display": "Recumbent Cycling 20 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 3.0
+              }
+            ]
+          },
+          {
+            "code": "water_walking",
+            "display": "Water Walking 20 min",
+            "property": [
+              {
+                "code": "intensity",
+                "valueString": "light"
+              },
+              {
+                "code": "met-value",
+                "valueDecimal": 3.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "walking_light",
+        "url": "http://example.org/fhir/ActivityDefinition/walking_light",
+        "status": "active",
+        "name": "Walking Light",
+        "title": "Light Walking 15-20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "walking_light",
+              "display": "Light Walking 15-20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "129006008",
+              "display": "Walking"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Light Walking 15-20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "walking_moderate",
+        "url": "http://example.org/fhir/ActivityDefinition/walking_moderate",
+        "status": "active",
+        "name": "Walking Moderate",
+        "title": "Moderate Walking 30 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "walking_moderate",
+              "display": "Moderate Walking 30 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "129006008",
+              "display": "Walking"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Moderate Walking 30 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "moderate"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 3.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "yoga_gentle",
+        "url": "http://example.org/fhir/ActivityDefinition/yoga_gentle",
+        "status": "active",
+        "name": "Yoga Gentle",
+        "title": "Gentle Yoga 20-30 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "yoga_gentle",
+              "display": "Gentle Yoga 20-30 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229065009",
+              "display": "Exercise therapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Gentle Yoga 20-30 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "yoga_chair",
+        "url": "http://example.org/fhir/ActivityDefinition/yoga_chair",
+        "status": "active",
+        "name": "Yoga Chair",
+        "title": "Chair Yoga 15-20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "yoga_chair",
+              "display": "Chair Yoga 15-20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229065009",
+              "display": "Exercise therapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Chair Yoga 15-20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "very_light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "aquagym",
+        "url": "http://example.org/fhir/ActivityDefinition/aquagym",
+        "status": "active",
+        "name": "Aquagym",
+        "title": "Aquagym 30 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "aquagym",
+              "display": "Aquagym 30 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229071003",
+              "display": "Aquatic physiotherapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Aquagym 30 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "moderate"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 4.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "swimming_light",
+        "url": "http://example.org/fhir/ActivityDefinition/swimming_light",
+        "status": "active",
+        "name": "Swimming Light",
+        "title": "Light Swimming 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "swimming_light",
+              "display": "Light Swimming 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "20461001",
+              "display": "Swimming"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Light Swimming 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "breathing_exercises",
+        "url": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+        "status": "active",
+        "name": "Breathing Exercises",
+        "title": "Breathing Exercises 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "breathing_exercises",
+              "display": "Breathing Exercises 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "304549008",
+              "display": "Breathing exercise"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Breathing Exercises 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "very_light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 1.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "stretching",
+        "url": "http://example.org/fhir/ActivityDefinition/stretching",
+        "status": "active",
+        "name": "Stretching",
+        "title": "Stretching 15-20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "stretching",
+              "display": "Stretching 15-20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "225317005",
+              "display": "Stretching"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Stretching 15-20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "very_light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "cycling_stationary",
+        "url": "http://example.org/fhir/ActivityDefinition/cycling_stationary",
+        "status": "active",
+        "name": "Cycling Stationary",
+        "title": "Stationary Cycling 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "cycling_stationary",
+              "display": "Stationary Cycling 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "70665002",
+              "display": "Bicycle exercise"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Stationary Cycling 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "moderate"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 4.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "strength_light",
+        "url": "http://example.org/fhir/ActivityDefinition/strength_light",
+        "status": "active",
+        "name": "Strength Light",
+        "title": "Light Strength Training 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "strength_light",
+              "display": "Light Strength Training 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "266694003",
+              "display": "Resistance training"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Light Strength Training 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "relaxation",
+        "url": "http://example.org/fhir/ActivityDefinition/relaxation",
+        "status": "active",
+        "name": "Relaxation",
+        "title": "Guided Relaxation 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "relaxation",
+              "display": "Guided Relaxation 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "228557008",
+              "display": "Relaxation therapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Guided Relaxation 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "very_light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "tai_chi",
+        "url": "http://example.org/fhir/ActivityDefinition/tai_chi",
+        "status": "active",
+        "name": "Tai Chi",
+        "title": "Tai Chi 20-30 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "tai_chi",
+              "display": "Tai Chi 20-30 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229072005",
+              "display": "Tai Chi"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Tai Chi 20-30 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "balance_training",
+        "url": "http://example.org/fhir/ActivityDefinition/balance_training",
+        "status": "active",
+        "name": "Balance Training",
+        "title": "Balance Training 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "balance_training",
+              "display": "Balance Training 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "710841007",
+              "display": "Balance training"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Balance Training 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "aerobic_light",
+        "url": "http://example.org/fhir/ActivityDefinition/aerobic_light",
+        "status": "active",
+        "name": "Aerobic Light",
+        "title": "Light Aerobic Exercise 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "aerobic_light",
+              "display": "Light Aerobic Exercise 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229070002",
+              "display": "Aerobic exercises"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Light Aerobic Exercise 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "resistance_bands",
+        "url": "http://example.org/fhir/ActivityDefinition/resistance_bands",
+        "status": "active",
+        "name": "Resistance Bands",
+        "title": "Resistance Band Exercise 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "resistance_bands",
+              "display": "Resistance Band Exercise 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "266694003",
+              "display": "Resistance training"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Resistance Band Exercise 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "nordic_walking",
+        "url": "http://example.org/fhir/ActivityDefinition/nordic_walking",
+        "status": "active",
+        "name": "Nordic Walking",
+        "title": "Nordic Walking 30 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "nordic_walking",
+              "display": "Nordic Walking 30 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "129006008",
+              "display": "Walking"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Nordic Walking 30 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "moderate"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 4.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "pilates_gentle",
+        "url": "http://example.org/fhir/ActivityDefinition/pilates_gentle",
+        "status": "active",
+        "name": "Pilates Gentle",
+        "title": "Gentle Pilates 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "pilates_gentle",
+              "display": "Gentle Pilates 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229065009",
+              "display": "Exercise therapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Gentle Pilates 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "qigong",
+        "url": "http://example.org/fhir/ActivityDefinition/qigong",
+        "status": "active",
+        "name": "Qigong",
+        "title": "Qigong 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "qigong",
+              "display": "Qigong 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229072005",
+              "display": "Mind-body exercise"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Qigong 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "very_light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "meditation",
+        "url": "http://example.org/fhir/ActivityDefinition/meditation",
+        "status": "active",
+        "name": "Meditation",
+        "title": "Guided Meditation 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "meditation",
+              "display": "Guided Meditation 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "103858009",
+              "display": "Meditation"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Guided Meditation 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "very_light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "gardening_light",
+        "url": "http://example.org/fhir/ActivityDefinition/gardening_light",
+        "status": "active",
+        "name": "Gardening Light",
+        "title": "Light Gardening 20-30 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "gardening_light",
+              "display": "Light Gardening 20-30 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "129010006",
+              "display": "Gardening activity"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Light Gardening 20-30 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dance_therapy",
+        "url": "http://example.org/fhir/ActivityDefinition/dance_therapy",
+        "status": "active",
+        "name": "Dance Therapy",
+        "title": "Dance/Movement Therapy 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "dance_therapy",
+              "display": "Dance/Movement Therapy 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229073000",
+              "display": "Dance therapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Dance/Movement Therapy 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "hydrotherapy",
+        "url": "http://example.org/fhir/ActivityDefinition/hydrotherapy",
+        "status": "active",
+        "name": "Hydrotherapy",
+        "title": "Hydrotherapy 30 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "hydrotherapy",
+              "display": "Hydrotherapy 30 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229071003",
+              "display": "Hydrotherapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Hydrotherapy 30 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "seated_exercises",
+        "url": "http://example.org/fhir/ActivityDefinition/seated_exercises",
+        "status": "active",
+        "name": "Seated Exercises",
+        "title": "Seated Exercises 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "seated_exercises",
+              "display": "Seated Exercises 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229065009",
+              "display": "Exercise therapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Seated Exercises 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "very_light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 1.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "arm_ergometer",
+        "url": "http://example.org/fhir/ActivityDefinition/arm_ergometer",
+        "status": "active",
+        "name": "Arm Ergometer",
+        "title": "Arm Ergometer 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "arm_ergometer",
+              "display": "Arm Ergometer 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229070002",
+              "display": "Upper body exercise"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Arm Ergometer 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "recumbent_cycling",
+        "url": "http://example.org/fhir/ActivityDefinition/recumbent_cycling",
+        "status": "active",
+        "name": "Recumbent Cycling",
+        "title": "Recumbent Cycling 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "recumbent_cycling",
+              "display": "Recumbent Cycling 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "70665002",
+              "display": "Bicycle exercise"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Recumbent Cycling 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "water_walking",
+        "url": "http://example.org/fhir/ActivityDefinition/water_walking",
+        "status": "active",
+        "name": "Water Walking",
+        "title": "Water Walking 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "water_walking",
+              "display": "Water Walking 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229071003",
+              "display": "Aquatic exercise"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Water Walking 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "ecog_0",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "ecog_0",
+              "display": "ECOG 0 - Fully Active"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "425389002",
+              "display": "ECOG performance status grade 0"
+            }
+          ],
+          "text": "ECOG 0 - Fully Active"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "ecog_1",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "ecog_1",
+              "display": "ECOG 1 - Restricted but Ambulatory"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "422512005",
+              "display": "ECOG performance status grade 1"
+            }
+          ],
+          "text": "ECOG 1 - Restricted but Ambulatory"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "ecog_2",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "ecog_2",
+              "display": "ECOG 2 - Ambulatory, Self-care"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "422894000",
+              "display": "ECOG performance status grade 2"
+            }
+          ],
+          "text": "ECOG 2 - Ambulatory, Self-care"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "ecog_3",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "ecog_3",
+              "display": "ECOG 3 - Limited Self-care"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "423053003",
+              "display": "ECOG performance status grade 3"
+            }
+          ],
+          "text": "ECOG 3 - Limited Self-care"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "ecog_4",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "ecog_4",
+              "display": "ECOG 4 - Completely Disabled"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "423237006",
+              "display": "ECOG performance status grade 4"
+            }
+          ],
+          "text": "ECOG 4 - Completely Disabled"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "fatigue_none_mild",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "fatigue_none_mild",
+              "display": "No/Mild Fatigue"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84229001",
+              "display": "Fatigue"
+            }
+          ],
+          "text": "No/Mild Fatigue"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "fatigue_moderate",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "fatigue_moderate",
+              "display": "Moderate Fatigue"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84229001",
+              "display": "Fatigue"
+            }
+          ],
+          "text": "Moderate Fatigue"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "fatigue_severe",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "fatigue_severe",
+              "display": "Severe Fatigue"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84229001",
+              "display": "Fatigue"
+            }
+          ],
+          "text": "Severe Fatigue"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "pain_mild",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "pain_mild",
+              "display": "Mild Pain"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "22253000",
+              "display": "Pain"
+            }
+          ],
+          "text": "Mild Pain"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "pain_moderate",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "pain_moderate",
+              "display": "Moderate Pain"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "22253000",
+              "display": "Pain"
+            }
+          ],
+          "text": "Moderate Pain"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "pain_severe",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "pain_severe",
+              "display": "Severe Pain"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "22253000",
+              "display": "Pain"
+            }
+          ],
+          "text": "Severe Pain"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "bone_pain",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "bone_pain",
+              "display": "Bone Pain"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "12584003",
+              "display": "Bone pain"
+            }
+          ],
+          "text": "Bone Pain"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "dyspnea_mild",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "dyspnea_mild",
+              "display": "Mild Shortness of Breath"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "267036007",
+              "display": "Dyspnea"
+            }
+          ],
+          "text": "Mild Shortness of Breath"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "dyspnea_moderate",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "dyspnea_moderate",
+              "display": "Moderate Shortness of Breath"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "267036007",
+              "display": "Dyspnea"
+            }
+          ],
+          "text": "Moderate Shortness of Breath"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "dyspnea_severe",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "dyspnea_severe",
+              "display": "Severe Shortness of Breath"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "267036007",
+              "display": "Dyspnea"
+            }
+          ],
+          "text": "Severe Shortness of Breath"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "hypertension_mild",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "hypertension_mild",
+              "display": "Mild Hypertension (130-139/85-89)"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "38341003",
+              "display": "Hypertensive disorder"
+            }
+          ],
+          "text": "Mild Hypertension (130-139/85-89)"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "hypertension_moderate",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "hypertension_moderate",
+              "display": "Moderate Hypertension (140-159/90-99)"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "38341003",
+              "display": "Hypertensive disorder"
+            }
+          ],
+          "text": "Moderate Hypertension (140-159/90-99)"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "hypertension_severe",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "hypertension_severe",
+              "display": "Severe Hypertension (>=180/>=110)"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "38341003",
+              "display": "Hypertensive disorder"
+            }
+          ],
+          "text": "Severe Hypertension (>=180/>=110)"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "low_wbc",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "low_wbc",
+              "display": "Low White Cell Count (<4.0)"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "767002",
+              "display": "White blood cell count low"
+            }
+          ],
+          "text": "Low White Cell Count (<4.0)"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "very_low_wbc",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "very_low_wbc",
+              "display": "Very Low White Cell Count (<3.0)"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "165517008",
+              "display": "Neutropenia"
+            }
+          ],
+          "text": "Very Low White Cell Count (<3.0)"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "anemia_mild",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "anemia_mild",
+              "display": "Mild Anemia (Hgb 10-12)"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271737000",
+              "display": "Anemia"
+            }
+          ],
+          "text": "Mild Anemia (Hgb 10-12)"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "anemia_moderate",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "anemia_moderate",
+              "display": "Moderate Anemia (Hgb 8-10)"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271737000",
+              "display": "Anemia"
+            }
+          ],
+          "text": "Moderate Anemia (Hgb 8-10)"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "anemia_severe",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "anemia_severe",
+              "display": "Severe Anemia (Hgb <8)"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271737000",
+              "display": "Anemia"
+            }
+          ],
+          "text": "Severe Anemia (Hgb <8)"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "low_platelets",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "low_platelets",
+              "display": "Low Platelet Count (<100k)"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "302215000",
+              "display": "Thrombocytopenic disorder"
+            }
+          ],
+          "text": "Low Platelet Count (<100k)"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "dizziness",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "dizziness",
+              "display": "Dizziness"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "404640003",
+              "display": "Dizziness"
+            }
+          ],
+          "text": "Dizziness"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "muscle_weakness",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "muscle_weakness",
+              "display": "Muscle Weakness"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "26544005",
+              "display": "Muscle weakness"
+            }
+          ],
+          "text": "Muscle Weakness"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "joint_pain",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "joint_pain",
+              "display": "Joint Pain"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57676002",
+              "display": "Arthralgia"
+            }
+          ],
+          "text": "Joint Pain"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "anxiety",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "anxiety",
+              "display": "Anxiety"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "48694002",
+              "display": "Anxiety"
+            }
+          ],
+          "text": "Anxiety"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "depression",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "depression",
+              "display": "Depression"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "35489007",
+              "display": "Depressive disorder"
+            }
+          ],
+          "text": "Depression"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "insomnia",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "insomnia",
+              "display": "Insomnia"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "193462001",
+              "display": "Insomnia"
+            }
+          ],
+          "text": "Insomnia"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationKnowledge",
+        "id": "doxorubicin",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "doxorubicin",
+              "display": "Doxorubicin (Adriamycin)"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "372817009",
+              "display": "Doxorubicin"
+            }
+          ]
+        },
+        "status": "active",
+        "associatedMedication": [],
+        "relatedMedicationKnowledge": [],
+        "drugCharacteristic": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/drug-characteristic",
+                  "code": "drug-class"
+                }
+              ]
+            },
+            "valueString": "anthracycline"
+          }
+        ],
+        "contraindication": [
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "cardiotoxicity",
+                  "display": "Cardiotoxicity"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "fatigue_severe",
+                  "display": "Fatigue Severe"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "nausea",
+                  "display": "Nausea"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "neutropenia",
+                  "display": "Neutropenia"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationKnowledge",
+        "id": "paclitaxel",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "paclitaxel",
+              "display": "Paclitaxel (Taxol)"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "387374002",
+              "display": "Paclitaxel"
+            }
+          ]
+        },
+        "status": "active",
+        "associatedMedication": [],
+        "relatedMedicationKnowledge": [],
+        "drugCharacteristic": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/drug-characteristic",
+                  "code": "drug-class"
+                }
+              ]
+            },
+            "valueString": "taxane"
+          }
+        ],
+        "contraindication": [
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "neuropathy",
+                  "display": "Neuropathy"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "fatigue_moderate",
+                  "display": "Fatigue Moderate"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "joint_pain",
+                  "display": "Joint Pain"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "neutropenia",
+                  "display": "Neutropenia"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationKnowledge",
+        "id": "cisplatin",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "cisplatin",
+              "display": "Cisplatin"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "387318005",
+              "display": "Cisplatin"
+            }
+          ]
+        },
+        "status": "active",
+        "associatedMedication": [],
+        "relatedMedicationKnowledge": [],
+        "drugCharacteristic": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/drug-characteristic",
+                  "code": "drug-class"
+                }
+              ]
+            },
+            "valueString": "platinum"
+          }
+        ],
+        "contraindication": [
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "nausea",
+                  "display": "Nausea"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "nephrotoxicity",
+                  "display": "Nephrotoxicity"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "ototoxicity",
+                  "display": "Ototoxicity"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "neuropathy",
+                  "display": "Neuropathy"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationKnowledge",
+        "id": "carboplatin",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "carboplatin",
+              "display": "Carboplatin"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "386905006",
+              "display": "Carboplatin"
+            }
+          ]
+        },
+        "status": "active",
+        "associatedMedication": [],
+        "relatedMedicationKnowledge": [],
+        "drugCharacteristic": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/drug-characteristic",
+                  "code": "drug-class"
+                }
+              ]
+            },
+            "valueString": "platinum"
+          }
+        ],
+        "contraindication": [
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "thrombocytopenia",
+                  "display": "Thrombocytopenia"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "neutropenia",
+                  "display": "Neutropenia"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "fatigue_moderate",
+                  "display": "Fatigue Moderate"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationKnowledge",
+        "id": "cyclophosphamide",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "cyclophosphamide",
+              "display": "Cyclophosphamide"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "387420009",
+              "display": "Cyclophosphamide"
+            }
+          ]
+        },
+        "status": "active",
+        "associatedMedication": [],
+        "relatedMedicationKnowledge": [],
+        "drugCharacteristic": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/drug-characteristic",
+                  "code": "drug-class"
+                }
+              ]
+            },
+            "valueString": "alkylating_agent"
+          }
+        ],
+        "contraindication": [
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "neutropenia",
+                  "display": "Neutropenia"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "nausea",
+                  "display": "Nausea"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "fatigue_moderate",
+                  "display": "Fatigue Moderate"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "bladder_toxicity",
+                  "display": "Bladder Toxicity"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationKnowledge",
+        "id": "fluorouracil",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "fluorouracil",
+              "display": "5-Fluorouracil (5-FU)"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "387172005",
+              "display": "Fluorouracil"
+            }
+          ]
+        },
+        "status": "active",
+        "associatedMedication": [],
+        "relatedMedicationKnowledge": [],
+        "drugCharacteristic": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/drug-characteristic",
+                  "code": "drug-class"
+                }
+              ]
+            },
+            "valueString": "antimetabolite"
+          }
+        ],
+        "contraindication": [
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "mucositis",
+                  "display": "Mucositis"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "diarrhea",
+                  "display": "Diarrhea"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "hand_foot_syndrome",
+                  "display": "Hand Foot Syndrome"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "fatigue_moderate",
+                  "display": "Fatigue Moderate"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationKnowledge",
+        "id": "methotrexate",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "methotrexate",
+              "display": "Methotrexate"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "387381009",
+              "display": "Methotrexate"
+            }
+          ]
+        },
+        "status": "active",
+        "associatedMedication": [],
+        "relatedMedicationKnowledge": [],
+        "drugCharacteristic": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/drug-characteristic",
+                  "code": "drug-class"
+                }
+              ]
+            },
+            "valueString": "antimetabolite"
+          }
+        ],
+        "contraindication": [
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "mucositis",
+                  "display": "Mucositis"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "hepatotoxicity",
+                  "display": "Hepatotoxicity"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "fatigue_moderate",
+                  "display": "Fatigue Moderate"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "neutropenia",
+                  "display": "Neutropenia"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationKnowledge",
+        "id": "trastuzumab",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "trastuzumab",
+              "display": "Trastuzumab (Herceptin)"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "414123001",
+              "display": "Trastuzumab"
+            }
+          ]
+        },
+        "status": "active",
+        "associatedMedication": [],
+        "relatedMedicationKnowledge": [],
+        "drugCharacteristic": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/drug-characteristic",
+                  "code": "drug-class"
+                }
+              ]
+            },
+            "valueString": "targeted_therapy"
+          }
+        ],
+        "contraindication": [
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "cardiotoxicity",
+                  "display": "Cardiotoxicity"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "fatigue_mild",
+                  "display": "Fatigue Mild"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "flu_like_symptoms",
+                  "display": "Flu Like Symptoms"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationKnowledge",
+        "id": "pembrolizumab",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "pembrolizumab",
+              "display": "Pembrolizumab (Keytruda)"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "716125002",
+              "display": "Pembrolizumab"
+            }
+          ]
+        },
+        "status": "active",
+        "associatedMedication": [],
+        "relatedMedicationKnowledge": [],
+        "drugCharacteristic": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/drug-characteristic",
+                  "code": "drug-class"
+                }
+              ]
+            },
+            "valueString": "immunotherapy"
+          }
+        ],
+        "contraindication": [
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "fatigue_moderate",
+                  "display": "Fatigue Moderate"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "autoimmune_reactions",
+                  "display": "Autoimmune Reactions"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "thyroid_dysfunction",
+                  "display": "Thyroid Dysfunction"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationKnowledge",
+        "id": "tamoxifen",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "tamoxifen",
+              "display": "Tamoxifen"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "373345002",
+              "display": "Tamoxifen"
+            }
+          ]
+        },
+        "status": "active",
+        "associatedMedication": [],
+        "relatedMedicationKnowledge": [],
+        "drugCharacteristic": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/drug-characteristic",
+                  "code": "drug-class"
+                }
+              ]
+            },
+            "valueString": "hormone_therapy"
+          }
+        ],
+        "contraindication": [
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "hot_flashes",
+                  "display": "Hot Flashes"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "joint_pain",
+                  "display": "Joint Pain"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "fatigue_mild",
+                  "display": "Fatigue Mild"
+                }
+              ]
+            }
+          },
+          {
+            "diseaseSymptomProcedure": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+                  "code": "thrombosis_risk",
+                  "display": "Thrombosis Risk"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_bc_ecog01_no_severe_fatigue",
+        "url": "http://example.org/fhir/PlanDefinition/profile_bc_ecog01_no_severe_fatigue",
+        "status": "active",
+        "name": "Profile Bc Ecog01 No Severe Fatigue",
+        "title": "Breast cancer, ECOG 0-1, no severe fatigue",
+        "description": "Activity recommendations for Breast cancer, ECOG 0-1, no severe fatigue",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Walking Moderate",
+            "description": "Recommended activity based on ACSM Guidelines 2019",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_moderate",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Yoga Gentle",
+            "description": "Recommended activity based on Oncology Nursing Forum",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_gentle",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Aquagym",
+            "description": "Recommended activity based on ESMO Clinical Practice",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/aquagym",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Cycling Stationary",
+            "description": "Recommended activity based on ACSM Guidelines 2019",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/cycling_stationary",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.75"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Nordic Walking",
+            "description": "Recommended activity based on ACSM Guidelines 2019",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/nordic_walking",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_bc_ecog2_moderate_fatigue",
+        "url": "http://example.org/fhir/PlanDefinition/profile_bc_ecog2_moderate_fatigue",
+        "status": "active",
+        "name": "Profile Bc Ecog2 Moderate Fatigue",
+        "title": "Breast cancer, ECOG 2, moderate fatigue",
+        "description": "Activity recommendations for Breast cancer, ECOG 2, moderate fatigue",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on NCCN Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Yoga Chair",
+            "description": "Recommended activity based on Supportive Care Cancer Journal",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_chair",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Breathing Exercises",
+            "description": "Recommended activity based on Cochrane Review",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.95"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Stretching",
+            "description": "Recommended activity based on ACSM Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/stretching",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_severe_fatigue",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_severe_fatigue",
+        "status": "active",
+        "name": "Profile Cancer Severe Fatigue",
+        "title": "Cancer with severe fatigue",
+        "description": "Activity recommendations for Cancer with severe fatigue",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Breathing Exercises",
+            "description": "Recommended activity based on NCCN Fatigue Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.95"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Relaxation",
+            "description": "Recommended activity based on Psycho-Oncology Journal",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/relaxation",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Stretching",
+            "description": "Recommended activity based on ACSM Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/stretching",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.7"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_high_bp",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_high_bp",
+        "status": "active",
+        "name": "Profile Cancer High Bp",
+        "title": "Cancer with hypertension",
+        "description": "Activity recommendations for Cancer with hypertension",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on AHA Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Yoga Gentle",
+            "description": "Recommended activity based on Hypertension Journal",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_gentle",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.75"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Tai Chi",
+            "description": "Recommended activity based on AHA Hypertension Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/tai_chi",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_immunocompromised",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_immunocompromised",
+        "status": "active",
+        "name": "Profile Cancer Immunocompromised",
+        "title": "Cancer with low immune function",
+        "description": "Activity recommendations for Cancer with low immune function",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on CDC Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Breathing Exercises",
+            "description": "Recommended activity based on Infection Control Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Yoga Chair",
+            "description": "Recommended activity based on Home-based exercise guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_chair",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_anemia",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_anemia",
+        "status": "active",
+        "name": "Profile Cancer Anemia",
+        "title": "Cancer with anemia",
+        "description": "Activity recommendations for Cancer with anemia",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on NCCN Anemia Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.7"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Yoga Chair",
+            "description": "Recommended activity based on Low-intensity exercise guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_chair",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Breathing Exercises",
+            "description": "Recommended activity based on NCCN Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_neuropathy",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_neuropathy",
+        "status": "active",
+        "name": "Profile Cancer Neuropathy",
+        "title": "Cancer with neuropathy",
+        "description": "Activity recommendations for Cancer with neuropathy",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Yoga Chair",
+            "description": "Recommended activity based on Neuropathy management guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_chair",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Balance Training",
+            "description": "Recommended activity based on Fall prevention guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/balance_training",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Stretching",
+            "description": "Recommended activity based on ACSM Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/stretching",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_bone_mets",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_bone_mets",
+        "status": "active",
+        "name": "Profile Cancer Bone Mets",
+        "title": "Cancer with bone metastases",
+        "description": "Activity recommendations for Cancer with bone metastases",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on Bone metastases guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.6"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Aquagym",
+            "description": "Recommended activity based on Low-impact exercise guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/aquagym",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.75"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Breathing Exercises",
+            "description": "Recommended activity based on Palliative care guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_lymphedema",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_lymphedema",
+        "status": "active",
+        "name": "Profile Cancer Lymphedema",
+        "title": "Cancer with lymphedema",
+        "description": "Activity recommendations for Cancer with lymphedema",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Aquagym",
+            "description": "Recommended activity based on Lymphedema management guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/aquagym",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Yoga Gentle",
+            "description": "Recommended activity based on ESMO Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_gentle",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on Lymphedema exercise guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_anxiety_depression",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_anxiety_depression",
+        "status": "active",
+        "name": "Profile Cancer Anxiety Depression",
+        "title": "Cancer with anxiety or depression",
+        "description": "Activity recommendations for Cancer with anxiety or depression",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Yoga Gentle",
+            "description": "Recommended activity based on Psycho-Oncology guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_gentle",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Walking Moderate",
+            "description": "Recommended activity based on Mental health exercise guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_moderate",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Tai Chi",
+            "description": "Recommended activity based on Mind-body intervention guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/tai_chi",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Relaxation",
+            "description": "Recommended activity based on Psycho-Oncology Journal",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/relaxation",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_active_chemo",
+        "url": "http://example.org/fhir/PlanDefinition/profile_active_chemo",
+        "status": "active",
+        "name": "Profile Active Chemo",
+        "title": "On active chemotherapy",
+        "description": "Activity recommendations for On active chemotherapy",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on NCCN Chemotherapy guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Yoga Chair",
+            "description": "Recommended activity based on Supportive care guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_chair",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Breathing Exercises",
+            "description": "Recommended activity based on NCCN Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_post_surgery",
+        "url": "http://example.org/fhir/PlanDefinition/profile_post_surgery",
+        "status": "active",
+        "name": "Profile Post Surgery",
+        "title": "Post-surgical recovery",
+        "description": "Activity recommendations for Post-surgical recovery",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Breathing Exercises",
+            "description": "Recommended activity based on Post-operative guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.95"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on Early mobilization guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Stretching",
+            "description": "Recommended activity based on Post-surgical rehabilitation",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/stretching",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.75"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

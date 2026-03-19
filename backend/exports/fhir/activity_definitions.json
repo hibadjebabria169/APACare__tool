@@ -1,0 +1,945 @@
+{
+  "resourceType": "Bundle",
+  "id": "ec411f39-a691-4d97-bc05-801988f6b32c",
+  "type": "collection",
+  "timestamp": "2026-02-11T15:31:19.345652Z",
+  "total": 26,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "walking_light",
+        "url": "http://example.org/fhir/ActivityDefinition/walking_light",
+        "status": "active",
+        "name": "Walking Light",
+        "title": "Light Walking 15-20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "walking_light",
+              "display": "Light Walking 15-20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "129006008",
+              "display": "Walking"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Light Walking 15-20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "walking_moderate",
+        "url": "http://example.org/fhir/ActivityDefinition/walking_moderate",
+        "status": "active",
+        "name": "Walking Moderate",
+        "title": "Moderate Walking 30 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "walking_moderate",
+              "display": "Moderate Walking 30 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "129006008",
+              "display": "Walking"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Moderate Walking 30 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "moderate"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 3.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "yoga_gentle",
+        "url": "http://example.org/fhir/ActivityDefinition/yoga_gentle",
+        "status": "active",
+        "name": "Yoga Gentle",
+        "title": "Gentle Yoga 20-30 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "yoga_gentle",
+              "display": "Gentle Yoga 20-30 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229065009",
+              "display": "Exercise therapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Gentle Yoga 20-30 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "yoga_chair",
+        "url": "http://example.org/fhir/ActivityDefinition/yoga_chair",
+        "status": "active",
+        "name": "Yoga Chair",
+        "title": "Chair Yoga 15-20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "yoga_chair",
+              "display": "Chair Yoga 15-20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229065009",
+              "display": "Exercise therapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Chair Yoga 15-20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "very_light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "aquagym",
+        "url": "http://example.org/fhir/ActivityDefinition/aquagym",
+        "status": "active",
+        "name": "Aquagym",
+        "title": "Aquagym 30 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "aquagym",
+              "display": "Aquagym 30 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229071003",
+              "display": "Aquatic physiotherapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Aquagym 30 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "moderate"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 4.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "swimming_light",
+        "url": "http://example.org/fhir/ActivityDefinition/swimming_light",
+        "status": "active",
+        "name": "Swimming Light",
+        "title": "Light Swimming 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "swimming_light",
+              "display": "Light Swimming 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "20461001",
+              "display": "Swimming"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Light Swimming 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "breathing_exercises",
+        "url": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+        "status": "active",
+        "name": "Breathing Exercises",
+        "title": "Breathing Exercises 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "breathing_exercises",
+              "display": "Breathing Exercises 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "304549008",
+              "display": "Breathing exercise"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Breathing Exercises 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "very_light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 1.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "stretching",
+        "url": "http://example.org/fhir/ActivityDefinition/stretching",
+        "status": "active",
+        "name": "Stretching",
+        "title": "Stretching 15-20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "stretching",
+              "display": "Stretching 15-20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "225317005",
+              "display": "Stretching"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Stretching 15-20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "very_light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "cycling_stationary",
+        "url": "http://example.org/fhir/ActivityDefinition/cycling_stationary",
+        "status": "active",
+        "name": "Cycling Stationary",
+        "title": "Stationary Cycling 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "cycling_stationary",
+              "display": "Stationary Cycling 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "70665002",
+              "display": "Bicycle exercise"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Stationary Cycling 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "moderate"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 4.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "strength_light",
+        "url": "http://example.org/fhir/ActivityDefinition/strength_light",
+        "status": "active",
+        "name": "Strength Light",
+        "title": "Light Strength Training 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "strength_light",
+              "display": "Light Strength Training 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "266694003",
+              "display": "Resistance training"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Light Strength Training 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "relaxation",
+        "url": "http://example.org/fhir/ActivityDefinition/relaxation",
+        "status": "active",
+        "name": "Relaxation",
+        "title": "Guided Relaxation 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "relaxation",
+              "display": "Guided Relaxation 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "228557008",
+              "display": "Relaxation therapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Guided Relaxation 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "very_light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "tai_chi",
+        "url": "http://example.org/fhir/ActivityDefinition/tai_chi",
+        "status": "active",
+        "name": "Tai Chi",
+        "title": "Tai Chi 20-30 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "tai_chi",
+              "display": "Tai Chi 20-30 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229072005",
+              "display": "Tai Chi"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Tai Chi 20-30 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "balance_training",
+        "url": "http://example.org/fhir/ActivityDefinition/balance_training",
+        "status": "active",
+        "name": "Balance Training",
+        "title": "Balance Training 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "balance_training",
+              "display": "Balance Training 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "710841007",
+              "display": "Balance training"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Balance Training 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "aerobic_light",
+        "url": "http://example.org/fhir/ActivityDefinition/aerobic_light",
+        "status": "active",
+        "name": "Aerobic Light",
+        "title": "Light Aerobic Exercise 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "aerobic_light",
+              "display": "Light Aerobic Exercise 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229070002",
+              "display": "Aerobic exercises"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Light Aerobic Exercise 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "resistance_bands",
+        "url": "http://example.org/fhir/ActivityDefinition/resistance_bands",
+        "status": "active",
+        "name": "Resistance Bands",
+        "title": "Resistance Band Exercise 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "resistance_bands",
+              "display": "Resistance Band Exercise 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "266694003",
+              "display": "Resistance training"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Resistance Band Exercise 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "nordic_walking",
+        "url": "http://example.org/fhir/ActivityDefinition/nordic_walking",
+        "status": "active",
+        "name": "Nordic Walking",
+        "title": "Nordic Walking 30 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "nordic_walking",
+              "display": "Nordic Walking 30 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "129006008",
+              "display": "Walking"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Nordic Walking 30 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "moderate"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 4.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "pilates_gentle",
+        "url": "http://example.org/fhir/ActivityDefinition/pilates_gentle",
+        "status": "active",
+        "name": "Pilates Gentle",
+        "title": "Gentle Pilates 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "pilates_gentle",
+              "display": "Gentle Pilates 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229065009",
+              "display": "Exercise therapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Gentle Pilates 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "qigong",
+        "url": "http://example.org/fhir/ActivityDefinition/qigong",
+        "status": "active",
+        "name": "Qigong",
+        "title": "Qigong 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "qigong",
+              "display": "Qigong 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229072005",
+              "display": "Mind-body exercise"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Qigong 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "very_light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "meditation",
+        "url": "http://example.org/fhir/ActivityDefinition/meditation",
+        "status": "active",
+        "name": "Meditation",
+        "title": "Guided Meditation 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "meditation",
+              "display": "Guided Meditation 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "103858009",
+              "display": "Meditation"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Guided Meditation 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "very_light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "gardening_light",
+        "url": "http://example.org/fhir/ActivityDefinition/gardening_light",
+        "status": "active",
+        "name": "Gardening Light",
+        "title": "Light Gardening 20-30 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "gardening_light",
+              "display": "Light Gardening 20-30 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "129010006",
+              "display": "Gardening activity"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Light Gardening 20-30 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "dance_therapy",
+        "url": "http://example.org/fhir/ActivityDefinition/dance_therapy",
+        "status": "active",
+        "name": "Dance Therapy",
+        "title": "Dance/Movement Therapy 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "dance_therapy",
+              "display": "Dance/Movement Therapy 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229073000",
+              "display": "Dance therapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Dance/Movement Therapy 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "hydrotherapy",
+        "url": "http://example.org/fhir/ActivityDefinition/hydrotherapy",
+        "status": "active",
+        "name": "Hydrotherapy",
+        "title": "Hydrotherapy 30 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "hydrotherapy",
+              "display": "Hydrotherapy 30 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229071003",
+              "display": "Hydrotherapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Hydrotherapy 30 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "seated_exercises",
+        "url": "http://example.org/fhir/ActivityDefinition/seated_exercises",
+        "status": "active",
+        "name": "Seated Exercises",
+        "title": "Seated Exercises 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "seated_exercises",
+              "display": "Seated Exercises 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229065009",
+              "display": "Exercise therapy"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Seated Exercises 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "very_light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 1.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "arm_ergometer",
+        "url": "http://example.org/fhir/ActivityDefinition/arm_ergometer",
+        "status": "active",
+        "name": "Arm Ergometer",
+        "title": "Arm Ergometer 15 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "arm_ergometer",
+              "display": "Arm Ergometer 15 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229070002",
+              "display": "Upper body exercise"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Arm Ergometer 15 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "recumbent_cycling",
+        "url": "http://example.org/fhir/ActivityDefinition/recumbent_cycling",
+        "status": "active",
+        "name": "Recumbent Cycling",
+        "title": "Recumbent Cycling 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "recumbent_cycling",
+              "display": "Recumbent Cycling 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "70665002",
+              "display": "Bicycle exercise"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Recumbent Cycling 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": "water_walking",
+        "url": "http://example.org/fhir/ActivityDefinition/water_walking",
+        "status": "active",
+        "name": "Water Walking",
+        "title": "Water Walking 20 min",
+        "kind": "ServiceRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/oncology-kg",
+              "code": "water_walking",
+              "display": "Water Walking 20 min"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229071003",
+              "display": "Aquatic exercise"
+            }
+          ]
+        },
+        "description": "Physical activity recommendation: Water Walking 20 min",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/activity-intensity",
+            "valueCode": "light"
+          },
+          {
+            "url": "http://example.org/fhir/StructureDefinition/met-value",
+            "valueDecimal": 3.0
+          }
+        ]
+      }
+    }
+  ]
+}

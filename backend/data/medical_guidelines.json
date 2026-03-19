@@ -1,0 +1,1309 @@
+{
+  "snomed_ct_version": "2024-01",
+  "snomed_ct_uri_base": "http://snomed.info/id/",
+  "knowledge_graph": {
+    "nodes": {
+      "diseases": [
+        {
+          "id": "breast_cancer",
+          "label": "Breast Cancer",
+          "icd10": "C50",
+          "snomed_code": "254837009",
+          "snomed_term": "Malignant neoplasm of breast"
+        },
+        {
+          "id": "lung_cancer",
+          "label": "Lung Cancer",
+          "icd10": "C34",
+          "snomed_code": "254637007",
+          "snomed_term": "Malignant neoplasm of lung"
+        },
+        {
+          "id": "colorectal_cancer",
+          "label": "Colorectal Cancer",
+          "icd10": "C18-C20",
+          "snomed_code": "363406005",
+          "snomed_term": "Malignant tumor of colon"
+        },
+        {
+          "id": "prostate_cancer",
+          "label": "Prostate Cancer",
+          "icd10": "C61",
+          "snomed_code": "399068003",
+          "snomed_term": "Malignant tumor of prostate"
+        },
+        {
+          "id": "lymphoma",
+          "label": "Lymphoma",
+          "icd10": "C81-C85",
+          "snomed_code": "118600007",
+          "snomed_term": "Malignant lymphoma"
+        },
+        {
+          "id": "leukemia",
+          "label": "Leukemia",
+          "icd10": "C91-C95",
+          "snomed_code": "93143009",
+          "snomed_term": "Leukemia"
+        },
+        {
+          "id": "ovarian_cancer",
+          "label": "Ovarian Cancer",
+          "icd10": "C56",
+          "snomed_code": "363443007",
+          "snomed_term": "Malignant tumor of ovary"
+        },
+        {
+          "id": "pancreatic_cancer",
+          "label": "Pancreatic Cancer",
+          "icd10": "C25",
+          "snomed_code": "363418001",
+          "snomed_term": "Malignant tumor of pancreas"
+        },
+        {
+          "id": "gastric_cancer",
+          "label": "Gastric Cancer",
+          "icd10": "C16",
+          "snomed_code": "363349007",
+          "snomed_term": "Malignant tumor of stomach"
+        },
+        {
+          "id": "melanoma",
+          "label": "Melanoma",
+          "icd10": "C43",
+          "snomed_code": "372244006",
+          "snomed_term": "Malignant melanoma"
+        },
+        {
+          "id": "thyroid_cancer",
+          "label": "Thyroid Cancer",
+          "icd10": "C73",
+          "snomed_code": "363478007",
+          "snomed_term": "Malignant tumor of thyroid gland"
+        },
+        {
+          "id": "bladder_cancer",
+          "label": "Bladder Cancer",
+          "icd10": "C67",
+          "snomed_code": "399326009",
+          "snomed_term": "Malignant tumor of urinary bladder"
+        },
+        {
+          "id": "kidney_cancer",
+          "label": "Kidney Cancer",
+          "icd10": "C64",
+          "snomed_code": "363518003",
+          "snomed_term": "Malignant tumor of kidney"
+        },
+        {
+          "id": "brain_cancer",
+          "label": "Brain Cancer",
+          "icd10": "C71",
+          "snomed_code": "428061005",
+          "snomed_term": "Malignant neoplasm of brain"
+        },
+        {
+          "id": "cervical_cancer",
+          "label": "Cervical Cancer",
+          "icd10": "C53",
+          "snomed_code": "363354003",
+          "snomed_term": "Malignant tumor of cervix"
+        },
+        {
+          "id": "esophageal_cancer",
+          "label": "Esophageal Cancer",
+          "icd10": "C15",
+          "snomed_code": "363402007",
+          "snomed_term": "Malignant tumor of esophagus"
+        },
+        {
+          "id": "liver_cancer",
+          "label": "Liver Cancer (HCC)",
+          "icd10": "C22",
+          "snomed_code": "363358000",
+          "snomed_term": "Malignant tumor of liver"
+        },
+        {
+          "id": "multiple_myeloma",
+          "label": "Multiple Myeloma",
+          "icd10": "C90.0",
+          "snomed_code": "109989006",
+          "snomed_term": "Multiple myeloma"
+        },
+        {
+          "id": "head_neck_cancer",
+          "label": "Head and Neck Cancer",
+          "icd10": "C00-C14",
+          "snomed_code": "255055008",
+          "snomed_term": "Malignant tumor of head and neck"
+        }
+      ],
+      "chemotherapy_drugs": [
+        {
+          "id": "doxorubicin",
+          "label": "Doxorubicin (Adriamycin)",
+          "snomed_code": "372817009",
+          "snomed_term": "Doxorubicin",
+          "drug_class": "anthracycline",
+          "common_side_effects": ["cardiotoxicity", "fatigue_severe", "nausea", "neutropenia"],
+          "activity_precautions": ["Monitor heart rate", "Avoid high-intensity cardio"]
+        },
+        {
+          "id": "paclitaxel",
+          "label": "Paclitaxel (Taxol)",
+          "snomed_code": "387374002",
+          "snomed_term": "Paclitaxel",
+          "drug_class": "taxane",
+          "common_side_effects": ["neuropathy", "fatigue_moderate", "joint_pain", "neutropenia"],
+          "activity_precautions": ["Balance training recommended", "Supportive footwear"]
+        },
+        {
+          "id": "cisplatin",
+          "label": "Cisplatin",
+          "snomed_code": "387318005",
+          "snomed_term": "Cisplatin",
+          "drug_class": "platinum",
+          "common_side_effects": ["nausea", "nephrotoxicity", "ototoxicity", "neuropathy"],
+          "activity_precautions": ["Stay hydrated", "Monitor kidney function"]
+        },
+        {
+          "id": "carboplatin",
+          "label": "Carboplatin",
+          "snomed_code": "386905006",
+          "snomed_term": "Carboplatin",
+          "drug_class": "platinum",
+          "common_side_effects": ["thrombocytopenia", "neutropenia", "fatigue_moderate"],
+          "activity_precautions": ["Avoid contact sports", "Monitor for bleeding"]
+        },
+        {
+          "id": "cyclophosphamide",
+          "label": "Cyclophosphamide",
+          "snomed_code": "387420009",
+          "snomed_term": "Cyclophosphamide",
+          "drug_class": "alkylating_agent",
+          "common_side_effects": ["neutropenia", "nausea", "fatigue_moderate", "bladder_toxicity"],
+          "activity_precautions": ["Hydrate well", "Avoid public pools"]
+        },
+        {
+          "id": "fluorouracil",
+          "label": "5-Fluorouracil (5-FU)",
+          "snomed_code": "387172005",
+          "snomed_term": "Fluorouracil",
+          "drug_class": "antimetabolite",
+          "common_side_effects": ["mucositis", "diarrhea", "hand_foot_syndrome", "fatigue_moderate"],
+          "activity_precautions": ["Protect hands and feet", "Gentle activities only"]
+        },
+        {
+          "id": "methotrexate",
+          "label": "Methotrexate",
+          "snomed_code": "387381009",
+          "snomed_term": "Methotrexate",
+          "drug_class": "antimetabolite",
+          "common_side_effects": ["mucositis", "hepatotoxicity", "fatigue_moderate", "neutropenia"],
+          "activity_precautions": ["Avoid sun exposure during activity", "Monitor fatigue"]
+        },
+        {
+          "id": "trastuzumab",
+          "label": "Trastuzumab (Herceptin)",
+          "snomed_code": "414123001",
+          "snomed_term": "Trastuzumab",
+          "drug_class": "targeted_therapy",
+          "common_side_effects": ["cardiotoxicity", "fatigue_mild", "flu_like_symptoms"],
+          "activity_precautions": ["Cardiac monitoring required", "Moderate intensity max"]
+        },
+        {
+          "id": "pembrolizumab",
+          "label": "Pembrolizumab (Keytruda)",
+          "snomed_code": "716125002",
+          "snomed_term": "Pembrolizumab",
+          "drug_class": "immunotherapy",
+          "common_side_effects": ["fatigue_moderate", "autoimmune_reactions", "thyroid_dysfunction"],
+          "activity_precautions": ["Monitor for unusual symptoms", "Rest if autoimmune flare"]
+        },
+        {
+          "id": "tamoxifen",
+          "label": "Tamoxifen",
+          "snomed_code": "373345002",
+          "snomed_term": "Tamoxifen",
+          "drug_class": "hormone_therapy",
+          "common_side_effects": ["hot_flashes", "joint_pain", "fatigue_mild", "thrombosis_risk"],
+          "activity_precautions": ["Stay active to reduce clot risk", "Weight-bearing exercise beneficial"]
+        }
+      ],
+      "cancer_stages": [
+        {
+          "id": "stage_i",
+          "label": "Stage I",
+          "snomed_code": "258215001",
+          "snomed_term": "Stage I"
+        },
+        {
+          "id": "stage_ii",
+          "label": "Stage II",
+          "snomed_code": "258219007",
+          "snomed_term": "Stage II"
+        },
+        {
+          "id": "stage_iii",
+          "label": "Stage III",
+          "snomed_code": "258224005",
+          "snomed_term": "Stage III"
+        },
+        {
+          "id": "stage_iv",
+          "label": "Stage IV (Metastatic)",
+          "snomed_code": "258228008",
+          "snomed_term": "Stage IV"
+        },
+        {
+          "id": "remission",
+          "label": "In Remission",
+          "snomed_code": "277022003",
+          "snomed_term": "Remission phase"
+        },
+        {
+          "id": "recurrence",
+          "label": "Recurrence",
+          "snomed_code": "25173007",
+          "snomed_term": "Recurrent tumor"
+        },
+        {
+          "id": "metastatic",
+          "label": "Metastatic Disease",
+          "snomed_code": "405843009",
+          "snomed_term": "Secondary malignant neoplastic disease"
+        }
+      ],
+      "treatments": [
+        {
+          "id": "chemotherapy",
+          "label": "Chemotherapy",
+          "snomed_code": "367336001",
+          "snomed_term": "Chemotherapy"
+        },
+        {
+          "id": "radiotherapy",
+          "label": "Radiotherapy",
+          "snomed_code": "108290001",
+          "snomed_term": "Radiation oncology"
+        },
+        {
+          "id": "immunotherapy",
+          "label": "Immunotherapy",
+          "snomed_code": "76334006",
+          "snomed_term": "Immunotherapy"
+        },
+        {
+          "id": "hormone_therapy",
+          "label": "Hormone Therapy",
+          "snomed_code": "169413002",
+          "snomed_term": "Hormone therapy"
+        },
+        {
+          "id": "surgery",
+          "label": "Surgery",
+          "snomed_code": "387713003",
+          "snomed_term": "Surgical procedure"
+        },
+        {
+          "id": "targeted_therapy",
+          "label": "Targeted Therapy",
+          "snomed_code": "281789004",
+          "snomed_term": "Targeted cancer therapy"
+        },
+        {
+          "id": "palliative_care",
+          "label": "Palliative Care",
+          "snomed_code": "103735009",
+          "snomed_term": "Palliative care"
+        }
+      ],
+      "side_effects": [
+        {
+          "id": "nausea",
+          "label": "Nausea",
+          "snomed_code": "422587007",
+          "snomed_term": "Nausea"
+        },
+        {
+          "id": "vomiting",
+          "label": "Vomiting",
+          "snomed_code": "422400008",
+          "snomed_term": "Vomiting"
+        },
+        {
+          "id": "neuropathy",
+          "label": "Peripheral Neuropathy",
+          "snomed_code": "386033004",
+          "snomed_term": "Neuropathy"
+        },
+        {
+          "id": "anemia",
+          "label": "Anemia",
+          "snomed_code": "271737000",
+          "snomed_term": "Anemia"
+        },
+        {
+          "id": "neutropenia",
+          "label": "Neutropenia",
+          "snomed_code": "165517008",
+          "snomed_term": "Neutropenia"
+        },
+        {
+          "id": "thrombocytopenia",
+          "label": "Thrombocytopenia",
+          "snomed_code": "302215000",
+          "snomed_term": "Thrombocytopenic disorder"
+        },
+        {
+          "id": "mucositis",
+          "label": "Mucositis",
+          "snomed_code": "26580005",
+          "snomed_term": "Mucositis"
+        },
+        {
+          "id": "alopecia",
+          "label": "Hair Loss",
+          "snomed_code": "56317004",
+          "snomed_term": "Alopecia"
+        },
+        {
+          "id": "lymphedema",
+          "label": "Lymphedema",
+          "snomed_code": "234097001",
+          "snomed_term": "Lymphedema"
+        },
+        {
+          "id": "cardiotoxicity",
+          "label": "Cardiotoxicity",
+          "snomed_code": "698247007",
+          "snomed_term": "Cardiac toxicity"
+        }
+      ],
+      "conditions": [
+        {
+          "id": "ecog_0",
+          "label": "ECOG 0 - Fully Active",
+          "severity": 0,
+          "snomed_code": "425389002",
+          "snomed_term": "ECOG performance status grade 0"
+        },
+        {
+          "id": "ecog_1",
+          "label": "ECOG 1 - Restricted but Ambulatory",
+          "severity": 1,
+          "snomed_code": "422512005",
+          "snomed_term": "ECOG performance status grade 1"
+        },
+        {
+          "id": "ecog_2",
+          "label": "ECOG 2 - Ambulatory, Self-care",
+          "severity": 2,
+          "snomed_code": "422894000",
+          "snomed_term": "ECOG performance status grade 2"
+        },
+        {
+          "id": "ecog_3",
+          "label": "ECOG 3 - Limited Self-care",
+          "severity": 3,
+          "snomed_code": "423053003",
+          "snomed_term": "ECOG performance status grade 3"
+        },
+        {
+          "id": "ecog_4",
+          "label": "ECOG 4 - Completely Disabled",
+          "severity": 4,
+          "snomed_code": "423237006",
+          "snomed_term": "ECOG performance status grade 4"
+        },
+        {
+          "id": "fatigue_none_mild",
+          "label": "No/Mild Fatigue",
+          "severity": 0,
+          "snomed_code": "84229001",
+          "snomed_term": "Fatigue",
+          "qualifier": "mild"
+        },
+        {
+          "id": "fatigue_moderate",
+          "label": "Moderate Fatigue",
+          "severity": 1,
+          "snomed_code": "84229001",
+          "snomed_term": "Fatigue",
+          "qualifier": "moderate"
+        },
+        {
+          "id": "fatigue_severe",
+          "label": "Severe Fatigue",
+          "severity": 2,
+          "snomed_code": "84229001",
+          "snomed_term": "Fatigue",
+          "qualifier": "severe"
+        },
+        {
+          "id": "pain_mild",
+          "label": "Mild Pain",
+          "severity": 1,
+          "snomed_code": "22253000",
+          "snomed_term": "Pain",
+          "qualifier": "mild"
+        },
+        {
+          "id": "pain_moderate",
+          "label": "Moderate Pain",
+          "severity": 2,
+          "snomed_code": "22253000",
+          "snomed_term": "Pain",
+          "qualifier": "moderate"
+        },
+        {
+          "id": "pain_severe",
+          "label": "Severe Pain",
+          "severity": 3,
+          "snomed_code": "22253000",
+          "snomed_term": "Pain",
+          "qualifier": "severe"
+        },
+        {
+          "id": "bone_pain",
+          "label": "Bone Pain",
+          "severity": 2,
+          "snomed_code": "12584003",
+          "snomed_term": "Bone pain"
+        },
+        {
+          "id": "dyspnea_mild",
+          "label": "Mild Shortness of Breath",
+          "severity": 1,
+          "snomed_code": "267036007",
+          "snomed_term": "Dyspnea",
+          "qualifier": "mild"
+        },
+        {
+          "id": "dyspnea_moderate",
+          "label": "Moderate Shortness of Breath",
+          "severity": 2,
+          "snomed_code": "267036007",
+          "snomed_term": "Dyspnea",
+          "qualifier": "moderate"
+        },
+        {
+          "id": "dyspnea_severe",
+          "label": "Severe Shortness of Breath",
+          "severity": 3,
+          "snomed_code": "267036007",
+          "snomed_term": "Dyspnea",
+          "qualifier": "severe"
+        },
+        {
+          "id": "hypertension_mild",
+          "label": "Mild Hypertension (130-139/85-89)",
+          "severity": 1,
+          "snomed_code": "38341003",
+          "snomed_term": "Hypertensive disorder",
+          "qualifier": "mild"
+        },
+        {
+          "id": "hypertension_moderate",
+          "label": "Moderate Hypertension (140-159/90-99)",
+          "severity": 2,
+          "snomed_code": "38341003",
+          "snomed_term": "Hypertensive disorder",
+          "qualifier": "moderate"
+        },
+        {
+          "id": "hypertension_severe",
+          "label": "Severe Hypertension (>=180/>=110)",
+          "severity": 3,
+          "snomed_code": "38341003",
+          "snomed_term": "Hypertensive disorder",
+          "qualifier": "severe"
+        },
+        {
+          "id": "low_wbc",
+          "label": "Low White Cell Count (<4.0)",
+          "severity": 2,
+          "snomed_code": "767002",
+          "snomed_term": "White blood cell count low"
+        },
+        {
+          "id": "very_low_wbc",
+          "label": "Very Low White Cell Count (<3.0)",
+          "severity": 3,
+          "snomed_code": "165517008",
+          "snomed_term": "Neutropenia"
+        },
+        {
+          "id": "anemia_mild",
+          "label": "Mild Anemia (Hgb 10-12)",
+          "severity": 1,
+          "snomed_code": "271737000",
+          "snomed_term": "Anemia"
+        },
+        {
+          "id": "anemia_moderate",
+          "label": "Moderate Anemia (Hgb 8-10)",
+          "severity": 2,
+          "snomed_code": "271737000",
+          "snomed_term": "Anemia"
+        },
+        {
+          "id": "anemia_severe",
+          "label": "Severe Anemia (Hgb <8)",
+          "severity": 3,
+          "snomed_code": "271737000",
+          "snomed_term": "Anemia"
+        },
+        {
+          "id": "low_platelets",
+          "label": "Low Platelet Count (<100k)",
+          "severity": 2,
+          "snomed_code": "302215000",
+          "snomed_term": "Thrombocytopenic disorder"
+        },
+        {
+          "id": "dizziness",
+          "label": "Dizziness",
+          "severity": 2,
+          "snomed_code": "404640003",
+          "snomed_term": "Dizziness"
+        },
+        {
+          "id": "muscle_weakness",
+          "label": "Muscle Weakness",
+          "severity": 2,
+          "snomed_code": "26544005",
+          "snomed_term": "Muscle weakness"
+        },
+        {
+          "id": "joint_pain",
+          "label": "Joint Pain",
+          "severity": 2,
+          "snomed_code": "57676002",
+          "snomed_term": "Arthralgia"
+        },
+        {
+          "id": "anxiety",
+          "label": "Anxiety",
+          "severity": 1,
+          "snomed_code": "48694002",
+          "snomed_term": "Anxiety"
+        },
+        {
+          "id": "depression",
+          "label": "Depression",
+          "severity": 2,
+          "snomed_code": "35489007",
+          "snomed_term": "Depressive disorder"
+        },
+        {
+          "id": "insomnia",
+          "label": "Insomnia",
+          "severity": 1,
+          "snomed_code": "193462001",
+          "snomed_term": "Insomnia"
+        }
+      ],
+      "comorbidities": [
+        {
+          "id": "type2_diabetes",
+          "label": "Type 2 Diabetes",
+          "snomed_code": "44054006",
+          "snomed_term": "Type 2 diabetes mellitus"
+        },
+        {
+          "id": "heart_failure",
+          "label": "Heart Failure",
+          "snomed_code": "84114007",
+          "snomed_term": "Heart failure"
+        },
+        {
+          "id": "coronary_artery_disease",
+          "label": "Coronary Artery Disease",
+          "snomed_code": "53741008",
+          "snomed_term": "Coronary arteriosclerosis"
+        },
+        {
+          "id": "copd",
+          "label": "COPD",
+          "snomed_code": "13645005",
+          "snomed_term": "Chronic obstructive lung disease"
+        },
+        {
+          "id": "osteoporosis",
+          "label": "Osteoporosis",
+          "snomed_code": "64859006",
+          "snomed_term": "Osteoporosis"
+        },
+        {
+          "id": "osteoarthritis",
+          "label": "Osteoarthritis",
+          "snomed_code": "396275006",
+          "snomed_term": "Osteoarthritis"
+        },
+        {
+          "id": "chronic_kidney_disease",
+          "label": "Chronic Kidney Disease",
+          "snomed_code": "709044004",
+          "snomed_term": "Chronic kidney disease"
+        },
+        {
+          "id": "obesity",
+          "label": "Obesity",
+          "snomed_code": "414916001",
+          "snomed_term": "Obesity"
+        }
+      ],
+      "observable_entities": [
+        {
+          "id": "heart_rate",
+          "label": "Heart Rate",
+          "snomed_code": "364075005",
+          "snomed_term": "Heart rate",
+          "unit": "bpm"
+        },
+        {
+          "id": "blood_pressure_systolic",
+          "label": "Systolic Blood Pressure",
+          "snomed_code": "271649006",
+          "snomed_term": "Systolic blood pressure",
+          "unit": "mmHg"
+        },
+        {
+          "id": "blood_pressure_diastolic",
+          "label": "Diastolic Blood Pressure",
+          "snomed_code": "271650006",
+          "snomed_term": "Diastolic blood pressure",
+          "unit": "mmHg"
+        },
+        {
+          "id": "bmi",
+          "label": "Body Mass Index",
+          "snomed_code": "60621009",
+          "snomed_term": "Body mass index",
+          "unit": "kg/m2"
+        },
+        {
+          "id": "body_weight",
+          "label": "Body Weight",
+          "snomed_code": "27113001",
+          "snomed_term": "Body weight",
+          "unit": "kg"
+        },
+        {
+          "id": "oxygen_saturation",
+          "label": "Oxygen Saturation",
+          "snomed_code": "431314004",
+          "snomed_term": "Peripheral oxygen saturation",
+          "unit": "%"
+        },
+        {
+          "id": "white_blood_cell_count",
+          "label": "White Blood Cell Count",
+          "snomed_code": "767002",
+          "snomed_term": "White blood cell count",
+          "unit": "x10^9/L"
+        },
+        {
+          "id": "neutrophil_count",
+          "label": "Neutrophil Count",
+          "snomed_code": "30630007",
+          "snomed_term": "Neutrophil count",
+          "unit": "x10^9/L"
+        },
+        {
+          "id": "hemoglobin",
+          "label": "Hemoglobin",
+          "snomed_code": "38082009",
+          "snomed_term": "Hemoglobin",
+          "unit": "g/dL"
+        },
+        {
+          "id": "platelet_count",
+          "label": "Platelet Count",
+          "snomed_code": "61928009",
+          "snomed_term": "Platelet count",
+          "unit": "x10^9/L"
+        },
+        {
+          "id": "blood_glucose",
+          "label": "Blood Glucose",
+          "snomed_code": "33747003",
+          "snomed_term": "Blood glucose level",
+          "unit": "mg/dL"
+        },
+        {
+          "id": "creatinine",
+          "label": "Creatinine",
+          "snomed_code": "70901006",
+          "snomed_term": "Creatinine level",
+          "unit": "mg/dL"
+        }
+      ],
+      "activities": [
+        {
+          "id": "walking_light",
+          "label": "Light Walking 15-20 min",
+          "intensity": "light",
+          "met": 2.5,
+          "snomed_code": "129006008",
+          "snomed_term": "Walking"
+        },
+        {
+          "id": "walking_moderate",
+          "label": "Moderate Walking 30 min",
+          "intensity": "moderate",
+          "met": 3.5,
+          "snomed_code": "129006008",
+          "snomed_term": "Walking"
+        },
+        {
+          "id": "yoga_gentle",
+          "label": "Gentle Yoga 20-30 min",
+          "intensity": "light",
+          "met": 2.5,
+          "snomed_code": "229065009",
+          "snomed_term": "Exercise therapy"
+        },
+        {
+          "id": "yoga_chair",
+          "label": "Chair Yoga 15-20 min",
+          "intensity": "very_light",
+          "met": 2.0,
+          "snomed_code": "229065009",
+          "snomed_term": "Exercise therapy"
+        },
+        {
+          "id": "aquagym",
+          "label": "Aquagym 30 min",
+          "intensity": "moderate",
+          "met": 4.0,
+          "snomed_code": "229071003",
+          "snomed_term": "Aquatic physiotherapy"
+        },
+        {
+          "id": "swimming_light",
+          "label": "Light Swimming 20 min",
+          "intensity": "light",
+          "met": 3.0,
+          "snomed_code": "20461001",
+          "snomed_term": "Swimming"
+        },
+        {
+          "id": "breathing_exercises",
+          "label": "Breathing Exercises 15 min",
+          "intensity": "very_light",
+          "met": 1.5,
+          "snomed_code": "304549008",
+          "snomed_term": "Breathing exercise"
+        },
+        {
+          "id": "stretching",
+          "label": "Stretching 15-20 min",
+          "intensity": "very_light",
+          "met": 2.0,
+          "snomed_code": "225317005",
+          "snomed_term": "Stretching"
+        },
+        {
+          "id": "cycling_stationary",
+          "label": "Stationary Cycling 20 min",
+          "intensity": "moderate",
+          "met": 4.0,
+          "snomed_code": "70665002",
+          "snomed_term": "Bicycle exercise"
+        },
+        {
+          "id": "strength_light",
+          "label": "Light Strength Training 15 min",
+          "intensity": "light",
+          "met": 3.0,
+          "snomed_code": "266694003",
+          "snomed_term": "Resistance training"
+        },
+        {
+          "id": "relaxation",
+          "label": "Guided Relaxation 15 min",
+          "intensity": "very_light",
+          "met": 1.0,
+          "snomed_code": "228557008",
+          "snomed_term": "Relaxation therapy"
+        },
+        {
+          "id": "tai_chi",
+          "label": "Tai Chi 20-30 min",
+          "intensity": "light",
+          "met": 2.5,
+          "snomed_code": "229072005",
+          "snomed_term": "Tai Chi"
+        },
+        {
+          "id": "balance_training",
+          "label": "Balance Training 15 min",
+          "intensity": "light",
+          "met": 2.0,
+          "snomed_code": "710841007",
+          "snomed_term": "Balance training"
+        },
+        {
+          "id": "aerobic_light",
+          "label": "Light Aerobic Exercise 20 min",
+          "intensity": "light",
+          "met": 3.0,
+          "snomed_code": "229070002",
+          "snomed_term": "Aerobic exercises"
+        },
+        {
+          "id": "resistance_bands",
+          "label": "Resistance Band Exercise 15 min",
+          "intensity": "light",
+          "met": 2.5,
+          "snomed_code": "266694003",
+          "snomed_term": "Resistance training"
+        },
+        {
+          "id": "nordic_walking",
+          "label": "Nordic Walking 30 min",
+          "intensity": "moderate",
+          "met": 4.5,
+          "snomed_code": "129006008",
+          "snomed_term": "Walking"
+        },
+        {
+          "id": "pilates_gentle",
+          "label": "Gentle Pilates 20 min",
+          "intensity": "light",
+          "met": 2.5,
+          "snomed_code": "229065009",
+          "snomed_term": "Exercise therapy"
+        },
+        {
+          "id": "qigong",
+          "label": "Qigong 20 min",
+          "intensity": "very_light",
+          "met": 2.0,
+          "snomed_code": "229072005",
+          "snomed_term": "Mind-body exercise"
+        },
+        {
+          "id": "meditation",
+          "label": "Guided Meditation 15 min",
+          "intensity": "very_light",
+          "met": 1.0,
+          "snomed_code": "103858009",
+          "snomed_term": "Meditation"
+        },
+        {
+          "id": "gardening_light",
+          "label": "Light Gardening 20-30 min",
+          "intensity": "light",
+          "met": 2.5,
+          "snomed_code": "129010006",
+          "snomed_term": "Gardening activity"
+        },
+        {
+          "id": "dance_therapy",
+          "label": "Dance/Movement Therapy 20 min",
+          "intensity": "light",
+          "met": 3.0,
+          "snomed_code": "229073000",
+          "snomed_term": "Dance therapy"
+        },
+        {
+          "id": "hydrotherapy",
+          "label": "Hydrotherapy 30 min",
+          "intensity": "light",
+          "met": 2.5,
+          "snomed_code": "229071003",
+          "snomed_term": "Hydrotherapy"
+        },
+        {
+          "id": "seated_exercises",
+          "label": "Seated Exercises 15 min",
+          "intensity": "very_light",
+          "met": 1.5,
+          "snomed_code": "229065009",
+          "snomed_term": "Exercise therapy"
+        },
+        {
+          "id": "arm_ergometer",
+          "label": "Arm Ergometer 15 min",
+          "intensity": "light",
+          "met": 2.5,
+          "snomed_code": "229070002",
+          "snomed_term": "Upper body exercise"
+        },
+        {
+          "id": "recumbent_cycling",
+          "label": "Recumbent Cycling 20 min",
+          "intensity": "light",
+          "met": 3.0,
+          "snomed_code": "70665002",
+          "snomed_term": "Bicycle exercise"
+        },
+        {
+          "id": "water_walking",
+          "label": "Water Walking 20 min",
+          "intensity": "light",
+          "met": 3.0,
+          "snomed_code": "229071003",
+          "snomed_term": "Aquatic exercise"
+        }
+      ],
+      "contraindication_reasons": [
+        {
+          "id": "bleeding_risk",
+          "label": "Risk of Bleeding",
+          "snomed_code": "131148009",
+          "snomed_term": "Bleeding risk"
+        },
+        {
+          "id": "fracture_risk",
+          "label": "Risk of Fracture",
+          "snomed_code": "473128000",
+          "snomed_term": "Risk of fracture"
+        },
+        {
+          "id": "infection_risk",
+          "label": "Risk of Infection",
+          "snomed_code": "409822003",
+          "snomed_term": "Infection risk"
+        },
+        {
+          "id": "cardiac_risk",
+          "label": "Cardiac Risk",
+          "snomed_code": "395098000",
+          "snomed_term": "Risk of cardiac event"
+        },
+        {
+          "id": "fall_risk",
+          "label": "Risk of Falling",
+          "snomed_code": "129839007",
+          "snomed_term": "At risk for falls"
+        }
+      ],
+      "profiles": [
+        {
+          "id": "profile_bc_ecog01_no_severe_fatigue",
+          "label": "Breast cancer, ECOG 0-1, no severe fatigue",
+          "conditions": ["breast_cancer", "ecog_0|ecog_1", "fatigue_none_mild|fatigue_moderate"]
+        },
+        {
+          "id": "profile_bc_ecog2_moderate_fatigue",
+          "label": "Breast cancer, ECOG 2, moderate fatigue",
+          "conditions": ["breast_cancer", "ecog_2", "fatigue_moderate"]
+        },
+        {
+          "id": "profile_cancer_severe_fatigue",
+          "label": "Cancer with severe fatigue",
+          "conditions": ["fatigue_severe"]
+        },
+        {
+          "id": "profile_cancer_high_bp",
+          "label": "Cancer with hypertension",
+          "conditions": ["hypertension_moderate|hypertension_severe"]
+        },
+        {
+          "id": "profile_cancer_immunocompromised",
+          "label": "Cancer with low immune function",
+          "conditions": ["low_wbc|very_low_wbc"]
+        },
+        {
+          "id": "profile_cancer_anemia",
+          "label": "Cancer with anemia",
+          "conditions": ["anemia_moderate|anemia_severe"]
+        },
+        {
+          "id": "profile_cancer_neuropathy",
+          "label": "Cancer with neuropathy",
+          "conditions": ["neuropathy"]
+        },
+        {
+          "id": "profile_cancer_bone_mets",
+          "label": "Cancer with bone metastases",
+          "conditions": ["metastatic", "bone_pain"]
+        },
+        {
+          "id": "profile_cancer_lymphedema",
+          "label": "Cancer with lymphedema",
+          "conditions": ["lymphedema"]
+        },
+        {
+          "id": "profile_cancer_anxiety_depression",
+          "label": "Cancer with anxiety or depression",
+          "conditions": ["anxiety|depression"]
+        },
+        {
+          "id": "profile_active_chemo",
+          "label": "On active chemotherapy",
+          "conditions": ["chemotherapy"]
+        },
+        {
+          "id": "profile_post_surgery",
+          "label": "Post-surgical recovery",
+          "conditions": ["surgery"]
+        }
+      ]
+    },
+    "edges": {
+      "recommends": [
+        {"from": "profile_bc_ecog01_no_severe_fatigue", "to": "walking_moderate", "weight": 0.9, "evidence": "ACSM Guidelines 2019", "snomed_supports": "129006008"},
+        {"from": "profile_bc_ecog01_no_severe_fatigue", "to": "yoga_gentle", "weight": 0.85, "evidence": "Oncology Nursing Forum", "snomed_supports": "229065009"},
+        {"from": "profile_bc_ecog01_no_severe_fatigue", "to": "aquagym", "weight": 0.8, "evidence": "ESMO Clinical Practice", "snomed_supports": "229071003"},
+        {"from": "profile_bc_ecog01_no_severe_fatigue", "to": "cycling_stationary", "weight": 0.75, "evidence": "ACSM Guidelines 2019", "snomed_supports": "70665002"},
+        {"from": "profile_bc_ecog01_no_severe_fatigue", "to": "nordic_walking", "weight": 0.8, "evidence": "ACSM Guidelines 2019", "snomed_supports": "129006008"},
+        {"from": "profile_bc_ecog2_moderate_fatigue", "to": "walking_light", "weight": 0.85, "evidence": "NCCN Guidelines", "snomed_supports": "129006008"},
+        {"from": "profile_bc_ecog2_moderate_fatigue", "to": "yoga_chair", "weight": 0.9, "evidence": "Supportive Care Cancer Journal", "snomed_supports": "229065009"},
+        {"from": "profile_bc_ecog2_moderate_fatigue", "to": "breathing_exercises", "weight": 0.95, "evidence": "Cochrane Review", "snomed_supports": "304549008"},
+        {"from": "profile_bc_ecog2_moderate_fatigue", "to": "stretching", "weight": 0.85, "evidence": "ACSM Guidelines", "snomed_supports": "225317005"},
+        {"from": "profile_cancer_severe_fatigue", "to": "breathing_exercises", "weight": 0.95, "evidence": "NCCN Fatigue Guidelines", "snomed_supports": "304549008"},
+        {"from": "profile_cancer_severe_fatigue", "to": "relaxation", "weight": 0.9, "evidence": "Psycho-Oncology Journal", "snomed_supports": "228557008"},
+        {"from": "profile_cancer_severe_fatigue", "to": "stretching", "weight": 0.7, "evidence": "ACSM Guidelines", "snomed_supports": "225317005"},
+        {"from": "profile_cancer_high_bp", "to": "walking_light", "weight": 0.8, "evidence": "AHA Guidelines", "snomed_supports": "129006008"},
+        {"from": "profile_cancer_high_bp", "to": "yoga_gentle", "weight": 0.75, "evidence": "Hypertension Journal", "snomed_supports": "229065009"},
+        {"from": "profile_cancer_high_bp", "to": "tai_chi", "weight": 0.85, "evidence": "AHA Hypertension Guidelines", "snomed_supports": "229072005"},
+        {"from": "profile_cancer_immunocompromised", "to": "walking_light", "weight": 0.85, "evidence": "CDC Guidelines", "snomed_supports": "129006008"},
+        {"from": "profile_cancer_immunocompromised", "to": "breathing_exercises", "weight": 0.9, "evidence": "Infection Control Guidelines", "snomed_supports": "304549008"},
+        {"from": "profile_cancer_immunocompromised", "to": "yoga_chair", "weight": 0.8, "evidence": "Home-based exercise guidelines", "snomed_supports": "229065009"},
+        {"from": "profile_cancer_anemia", "to": "walking_light", "weight": 0.7, "evidence": "NCCN Anemia Guidelines", "snomed_supports": "129006008"},
+        {"from": "profile_cancer_anemia", "to": "yoga_chair", "weight": 0.8, "evidence": "Low-intensity exercise guidelines", "snomed_supports": "229065009"},
+        {"from": "profile_cancer_anemia", "to": "breathing_exercises", "weight": 0.85, "evidence": "NCCN Guidelines", "snomed_supports": "304549008"},
+        {"from": "profile_cancer_neuropathy", "to": "yoga_chair", "weight": 0.85, "evidence": "Neuropathy management guidelines", "snomed_supports": "229065009"},
+        {"from": "profile_cancer_neuropathy", "to": "balance_training", "weight": 0.9, "evidence": "Fall prevention guidelines", "snomed_supports": "710841007"},
+        {"from": "profile_cancer_neuropathy", "to": "stretching", "weight": 0.8, "evidence": "ACSM Guidelines", "snomed_supports": "225317005"},
+        {"from": "profile_cancer_bone_mets", "to": "walking_light", "weight": 0.6, "evidence": "Bone metastases guidelines", "snomed_supports": "129006008"},
+        {"from": "profile_cancer_bone_mets", "to": "aquagym", "weight": 0.75, "evidence": "Low-impact exercise guidelines", "snomed_supports": "229071003"},
+        {"from": "profile_cancer_bone_mets", "to": "breathing_exercises", "weight": 0.9, "evidence": "Palliative care guidelines", "snomed_supports": "304549008"},
+        {"from": "profile_cancer_lymphedema", "to": "aquagym", "weight": 0.9, "evidence": "Lymphedema management guidelines", "snomed_supports": "229071003"},
+        {"from": "profile_cancer_lymphedema", "to": "yoga_gentle", "weight": 0.85, "evidence": "ESMO Guidelines", "snomed_supports": "229065009"},
+        {"from": "profile_cancer_lymphedema", "to": "walking_light", "weight": 0.8, "evidence": "Lymphedema exercise guidelines", "snomed_supports": "129006008"},
+        {"from": "profile_cancer_anxiety_depression", "to": "yoga_gentle", "weight": 0.9, "evidence": "Psycho-Oncology guidelines", "snomed_supports": "229065009"},
+        {"from": "profile_cancer_anxiety_depression", "to": "walking_moderate", "weight": 0.85, "evidence": "Mental health exercise guidelines", "snomed_supports": "129006008"},
+        {"from": "profile_cancer_anxiety_depression", "to": "tai_chi", "weight": 0.85, "evidence": "Mind-body intervention guidelines", "snomed_supports": "229072005"},
+        {"from": "profile_cancer_anxiety_depression", "to": "relaxation", "weight": 0.9, "evidence": "Psycho-Oncology Journal", "snomed_supports": "228557008"},
+        {"from": "profile_active_chemo", "to": "walking_light", "weight": 0.8, "evidence": "NCCN Chemotherapy guidelines", "snomed_supports": "129006008"},
+        {"from": "profile_active_chemo", "to": "yoga_chair", "weight": 0.85, "evidence": "Supportive care guidelines", "snomed_supports": "229065009"},
+        {"from": "profile_active_chemo", "to": "breathing_exercises", "weight": 0.9, "evidence": "NCCN Guidelines", "snomed_supports": "304549008"},
+        {"from": "profile_post_surgery", "to": "breathing_exercises", "weight": 0.95, "evidence": "Post-operative guidelines", "snomed_supports": "304549008"},
+        {"from": "profile_post_surgery", "to": "walking_light", "weight": 0.8, "evidence": "Early mobilization guidelines", "snomed_supports": "129006008"},
+        {"from": "profile_post_surgery", "to": "stretching", "weight": 0.75, "evidence": "Post-surgical rehabilitation", "snomed_supports": "225317005"}
+      ],
+      "contraindicates": [
+        {"from": "fatigue_severe", "to": "walking_moderate", "reason": "Excessive exertion risk", "snomed_reason": "84229001"},
+        {"from": "fatigue_severe", "to": "cycling_stationary", "reason": "Cardiovascular strain", "snomed_reason": "84229001"},
+        {"from": "fatigue_severe", "to": "aquagym", "reason": "Drowning risk with severe fatigue", "snomed_reason": "84229001"},
+        {"from": "fatigue_severe", "to": "nordic_walking", "reason": "Excessive exertion risk", "snomed_reason": "84229001"},
+        {"from": "hypertension_severe", "to": "cycling_stationary", "reason": "BP spike risk", "snomed_reason": "395098000"},
+        {"from": "hypertension_severe", "to": "strength_light", "reason": "Valsalva maneuver risk", "snomed_reason": "395098000"},
+        {"from": "hypertension_severe", "to": "nordic_walking", "reason": "Cardiovascular strain", "snomed_reason": "395098000"},
+        {"from": "very_low_wbc", "to": "aquagym", "reason": "Infection risk in public pools", "snomed_reason": "409822003"},
+        {"from": "very_low_wbc", "to": "swimming_light", "reason": "Infection risk", "snomed_reason": "409822003"},
+        {"from": "neutropenia", "to": "aquagym", "reason": "High infection risk in water", "snomed_reason": "409822003"},
+        {"from": "neutropenia", "to": "swimming_light", "reason": "Infection risk in public facilities", "snomed_reason": "409822003"},
+        {"from": "ecog_3", "to": "walking_moderate", "reason": "Functional limitation", "snomed_reason": "423053003"},
+        {"from": "ecog_3", "to": "cycling_stationary", "reason": "Safety concern", "snomed_reason": "423053003"},
+        {"from": "ecog_3", "to": "aquagym", "reason": "Safety concern", "snomed_reason": "423053003"},
+        {"from": "ecog_4", "to": "walking_light", "reason": "Complete disability", "snomed_reason": "423237006"},
+        {"from": "ecog_4", "to": "yoga_gentle", "reason": "Complete disability", "snomed_reason": "423237006"},
+        {"from": "ecog_4", "to": "stretching", "reason": "Limited functional capacity", "snomed_reason": "423237006"},
+        {"from": "anemia_severe", "to": "walking_moderate", "reason": "Cardiac strain with low hemoglobin", "snomed_reason": "271737000"},
+        {"from": "anemia_severe", "to": "cycling_stationary", "reason": "Cardiac strain risk", "snomed_reason": "271737000"},
+        {"from": "anemia_severe", "to": "aquagym", "reason": "Excessive exertion risk", "snomed_reason": "271737000"},
+        {"from": "low_platelets", "to": "strength_light", "reason": "Bleeding risk with resistance training", "snomed_reason": "131148009"},
+        {"from": "low_platelets", "to": "cycling_stationary", "reason": "Risk of injury and bleeding", "snomed_reason": "131148009"},
+        {"from": "thrombocytopenia", "to": "strength_light", "reason": "Bleeding risk", "snomed_reason": "131148009"},
+        {"from": "bone_pain", "to": "strength_light", "reason": "Fracture risk with bone metastases", "snomed_reason": "473128000"},
+        {"from": "bone_pain", "to": "nordic_walking", "reason": "Fracture risk", "snomed_reason": "473128000"},
+        {"from": "osteoporosis", "to": "strength_light", "reason": "Fracture risk", "snomed_reason": "473128000"},
+        {"from": "neuropathy", "to": "cycling_stationary", "reason": "Balance and safety concern", "snomed_reason": "129839007"},
+        {"from": "neuropathy", "to": "nordic_walking", "reason": "Fall risk due to sensory loss", "snomed_reason": "129839007"},
+        {"from": "dizziness", "to": "cycling_stationary", "reason": "Fall risk", "snomed_reason": "129839007"},
+        {"from": "dizziness", "to": "aquagym", "reason": "Safety concern in water", "snomed_reason": "129839007"},
+        {"from": "dyspnea_severe", "to": "walking_moderate", "reason": "Respiratory distress risk", "snomed_reason": "267036007"},
+        {"from": "dyspnea_severe", "to": "cycling_stationary", "reason": "Respiratory strain", "snomed_reason": "267036007"},
+        {"from": "dyspnea_severe", "to": "aquagym", "reason": "Breathing difficulty in water", "snomed_reason": "267036007"},
+        {"from": "heart_failure", "to": "cycling_stationary", "reason": "Cardiac strain", "snomed_reason": "395098000"},
+        {"from": "heart_failure", "to": "aquagym", "reason": "Cardiac strain risk", "snomed_reason": "395098000"},
+        {"from": "cardiotoxicity", "to": "cycling_stationary", "reason": "Cardiac monitoring required", "snomed_reason": "395098000"},
+        {"from": "cardiotoxicity", "to": "nordic_walking", "reason": "Cardiac risk", "snomed_reason": "395098000"}
+      ],
+      "adapts": [
+        {"condition": "fatigue_moderate", "activity": "walking_moderate", "adaptation": "Reduce to 20 min, add rest breaks", "snomed_condition": "84229001"},
+        {"condition": "fatigue_moderate", "activity": "yoga_gentle", "adaptation": "Include more restorative poses", "snomed_condition": "84229001"},
+        {"condition": "hypertension_mild", "activity": "walking_moderate", "adaptation": "Keep pace gentle, monitor symptoms", "snomed_condition": "38341003"},
+        {"condition": "hypertension_moderate", "activity": "walking_light", "adaptation": "Limit to 15 min, avoid hills", "snomed_condition": "38341003"},
+        {"condition": "low_wbc", "activity": "walking_light", "adaptation": "Outdoor only, avoid crowded areas", "snomed_condition": "767002"},
+        {"condition": "ecog_2", "activity": "yoga_gentle", "adaptation": "Chair yoga recommended", "snomed_condition": "422894000"},
+        {"condition": "breast_cancer", "activity": "strength_light", "adaptation": "Avoid affected side exercises initially", "snomed_condition": "254837009"},
+        {"condition": "lymphedema", "activity": "strength_light", "adaptation": "Use compression sleeve, light weights only", "snomed_condition": "234097001"},
+        {"condition": "lymphedema", "activity": "yoga_gentle", "adaptation": "Elevate affected limb during poses", "snomed_condition": "234097001"},
+        {"condition": "neuropathy", "activity": "walking_light", "adaptation": "Use supportive footwear, flat surfaces only", "snomed_condition": "386033004"},
+        {"condition": "neuropathy", "activity": "balance_training", "adaptation": "Hold onto support, seated exercises preferred", "snomed_condition": "386033004"},
+        {"condition": "anemia_mild", "activity": "walking_moderate", "adaptation": "Reduce duration to 20 min, monitor fatigue", "snomed_condition": "271737000"},
+        {"condition": "bone_pain", "activity": "walking_light", "adaptation": "Use walking aid if needed, flat surfaces only", "snomed_condition": "12584003"},
+        {"condition": "bone_pain", "activity": "aquagym", "adaptation": "Avoid jumping movements, gentle floating", "snomed_condition": "12584003"},
+        {"condition": "dyspnea_mild", "activity": "walking_light", "adaptation": "Slow pace, take breaks as needed", "snomed_condition": "267036007"},
+        {"condition": "dyspnea_moderate", "activity": "breathing_exercises", "adaptation": "Seated position, shorter sessions", "snomed_condition": "267036007"},
+        {"condition": "anxiety", "activity": "yoga_gentle", "adaptation": "Include longer relaxation periods", "snomed_condition": "48694002"},
+        {"condition": "insomnia", "activity": "relaxation", "adaptation": "Schedule in evening, avoid stimulating activities", "snomed_condition": "193462001"},
+        {"condition": "joint_pain", "activity": "walking_light", "adaptation": "Supportive footwear, avoid stairs", "snomed_condition": "57676002"},
+        {"condition": "joint_pain", "activity": "aquagym", "adaptation": "Warm water preferred, gentle movements", "snomed_condition": "57676002"},
+        {"condition": "osteoarthritis", "activity": "cycling_stationary", "adaptation": "Low resistance, shorter duration", "snomed_condition": "396275006"},
+        {"condition": "type2_diabetes", "activity": "walking_moderate", "adaptation": "Monitor blood glucose before/after, carry snack", "snomed_condition": "44054006"},
+        {"condition": "obesity", "activity": "aquagym", "adaptation": "Extended warm-up, focus on low-impact", "snomed_condition": "414916001"}
+      ]
+    }
+  },
+  "guidelines": [
+    {
+      "id": "guideline_acsm_2019",
+      "source": "ACSM Exercise Guidelines for Cancer Survivors",
+      "year": 2019,
+      "doi": "10.1249/MSS.0000000000002116",
+      "content": "For cancer survivors, 150 minutes per week of moderate-intensity aerobic exercise is recommended. For those with functional limitations, any amount of physical activity is beneficial.",
+      "snomed_activities": ["129006008", "70665002", "229065009"]
+    },
+    {
+      "id": "guideline_nccn_fatigue",
+      "source": "NCCN Cancer-Related Fatigue Guidelines",
+      "year": 2023,
+      "content": "For patients with moderate fatigue, light activity such as walking or yoga is recommended. For severe fatigue, rest is prioritized with gentle breathing exercises when tolerated.",
+      "snomed_conditions": ["84229001"]
+    },
+    {
+      "id": "guideline_esmo_breast",
+      "source": "ESMO Breast Cancer Clinical Practice Guidelines",
+      "year": 2022,
+      "content": "Physical activity during and after treatment improves quality of life. Aquatic exercises are particularly beneficial for patients with lymphedema risk.",
+      "snomed_diseases": ["254837009"],
+      "snomed_conditions": ["234097001"]
+    },
+    {
+      "id": "guideline_aha_hypertension",
+      "source": "AHA Physical Activity and Hypertension",
+      "year": 2021,
+      "content": "For patients with hypertension, avoid high-intensity exercise. Moderate walking is safe and beneficial for blood pressure management.",
+      "snomed_conditions": ["38341003"]
+    },
+    {
+      "id": "guideline_infection_control",
+      "source": "CDC Guidelines for Immunocompromised Patients",
+      "year": 2023,
+      "content": "Patients with low white cell counts should avoid public pools and crowded gyms. Outdoor activities in open spaces are preferred.",
+      "snomed_conditions": ["165517008", "767002"]
+    },
+    {
+      "id": "guideline_bone_mets",
+      "source": "ASCO Guidelines for Bone Metastases",
+      "year": 2022,
+      "content": "Patients with bone metastases should avoid high-impact activities and heavy resistance training. Low-impact activities like walking and aquatic therapy are safer alternatives.",
+      "snomed_conditions": ["405843009", "12584003"]
+    },
+    {
+      "id": "guideline_neuropathy",
+      "source": "ONS Chemotherapy-Induced Peripheral Neuropathy Guidelines",
+      "year": 2022,
+      "content": "Balance training is recommended for patients with peripheral neuropathy to reduce fall risk. Avoid activities requiring fine motor control of feet.",
+      "snomed_conditions": ["386033004"]
+    },
+    {
+      "id": "guideline_cardiotoxicity",
+      "source": "ESC Guidelines on Cardio-Oncology",
+      "year": 2022,
+      "content": "Patients with treatment-related cardiotoxicity should undergo cardiac assessment before exercise. Light to moderate activities with heart rate monitoring are recommended.",
+      "snomed_conditions": ["698247007"]
+    },
+    {
+      "id": "guideline_psycho_oncology",
+      "source": "IPOS Standards of Care for Distress Management",
+      "year": 2021,
+      "content": "Mind-body interventions including yoga, tai chi, and relaxation therapy are effective for managing anxiety and depression in cancer patients.",
+      "snomed_conditions": ["48694002", "35489007"]
+    },
+    {
+      "id": "guideline_anemia",
+      "source": "NCCN Anemia Guidelines",
+      "year": 2023,
+      "content": "Patients with hemoglobin below 10 g/dL should limit exercise intensity. Those with severe anemia (Hgb <8) should avoid all but gentle activities.",
+      "snomed_conditions": ["271737000"]
+    },
+    {
+      "id": "guideline_who_physical_activity",
+      "source": "WHO Guidelines on Physical Activity and Sedentary Behaviour",
+      "year": 2020,
+      "doi": "10.4324/9781003120049",
+      "content": "Adults with chronic conditions including cancer should aim for 150-300 minutes of moderate-intensity aerobic activity per week. Some physical activity is better than none.",
+      "snomed_activities": ["129006008", "229065009", "20461001"]
+    },
+    {
+      "id": "guideline_asco_exercise",
+      "source": "ASCO Exercise Recommendation for Cancer Patients",
+      "year": 2022,
+      "content": "Exercise during cancer treatment is safe and beneficial. Supervised exercise programs are recommended when available. Individualized programs based on treatment type are optimal.",
+      "snomed_activities": ["229065009", "266694003"]
+    },
+    {
+      "id": "guideline_anthracycline_cardio",
+      "source": "ESC Position Paper on Cancer Treatments and Cardiovascular Toxicity",
+      "year": 2022,
+      "content": "Patients receiving anthracyclines (doxorubicin) should have cardiac monitoring. Exercise is beneficial but intensity should be moderated. Avoid high-intensity intervals.",
+      "snomed_drugs": ["372817009"],
+      "snomed_conditions": ["698247007"]
+    },
+    {
+      "id": "guideline_taxane_neuropathy",
+      "source": "ONS Guidelines for Taxane-Induced Neuropathy",
+      "year": 2023,
+      "content": "Patients on taxanes (paclitaxel, docetaxel) should be monitored for peripheral neuropathy. Balance training and supportive footwear are essential. Avoid uneven surfaces.",
+      "snomed_drugs": ["387374002"],
+      "snomed_conditions": ["386033004"]
+    },
+    {
+      "id": "guideline_immunotherapy_exercise",
+      "source": "Immunotherapy and Exercise: Emerging Evidence",
+      "year": 2023,
+      "content": "Exercise may enhance immunotherapy efficacy. Moderate activity is encouraged unless autoimmune adverse events occur. Monitor for unusual fatigue or symptoms.",
+      "snomed_drugs": ["716125002"]
+    },
+    {
+      "id": "guideline_brain_tumor_exercise",
+      "source": "Neuro-Oncology Exercise Guidelines",
+      "year": 2022,
+      "content": "Patients with brain tumors may have balance, coordination, or cognitive challenges. Supervised exercise with fall prevention measures is recommended. Avoid activities with seizure risk.",
+      "snomed_diseases": ["428061005"],
+      "snomed_activities": ["710841007", "229065009"]
+    },
+    {
+      "id": "guideline_myeloma_bone",
+      "source": "IMWG Guidelines for Multiple Myeloma and Bone Health",
+      "year": 2023,
+      "content": "Multiple myeloma patients with bone involvement should avoid high-impact activities. Low-impact exercises like swimming, walking, and gentle stretching are preferred.",
+      "snomed_diseases": ["109989006"],
+      "snomed_conditions": ["473128000"]
+    },
+    {
+      "id": "guideline_head_neck_swallowing",
+      "source": "AHNS Guidelines for Head and Neck Cancer Rehabilitation",
+      "year": 2022,
+      "content": "Head and neck cancer patients may benefit from jaw exercises, range-of-motion activities, and respiratory exercises. Monitor for lymphedema in neck and face.",
+      "snomed_diseases": ["255055008"],
+      "snomed_activities": ["304549008", "225317005"]
+    },
+    {
+      "id": "guideline_liver_cancer_exercise",
+      "source": "EASL-EORTC Guidelines for Hepatocellular Carcinoma",
+      "year": 2022,
+      "content": "Patients with liver cancer and cirrhosis should exercise cautiously. Low-intensity activities are preferred. Monitor for ascites and encephalopathy symptoms.",
+      "snomed_diseases": ["363358000"],
+      "snomed_activities": ["129006008", "229065009"]
+    },
+    {
+      "id": "guideline_hormone_therapy_bone",
+      "source": "Bone Health in Hormone Therapy for Cancer",
+      "year": 2023,
+      "content": "Patients on hormone therapy (tamoxifen, aromatase inhibitors) should engage in weight-bearing exercise to protect bone density. Calcium and vitamin D supplementation recommended.",
+      "snomed_drugs": ["373345002"],
+      "snomed_activities": ["129006008", "266694003"]
+    }
+  ]
+}

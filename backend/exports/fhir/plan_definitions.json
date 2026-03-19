@@ -1,0 +1,821 @@
+{
+  "resourceType": "Bundle",
+  "id": "42b4bc2c-8d9a-497c-8c91-8165821daa09",
+  "type": "collection",
+  "timestamp": "2026-02-11T15:31:19.349779Z",
+  "total": 12,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_bc_ecog01_no_severe_fatigue",
+        "url": "http://example.org/fhir/PlanDefinition/profile_bc_ecog01_no_severe_fatigue",
+        "status": "active",
+        "name": "Profile Bc Ecog01 No Severe Fatigue",
+        "title": "Breast cancer, ECOG 0-1, no severe fatigue",
+        "description": "Activity recommendations for Breast cancer, ECOG 0-1, no severe fatigue",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Walking Moderate",
+            "description": "Recommended activity based on ACSM Guidelines 2019",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_moderate",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Yoga Gentle",
+            "description": "Recommended activity based on Oncology Nursing Forum",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_gentle",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Aquagym",
+            "description": "Recommended activity based on ESMO Clinical Practice",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/aquagym",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Cycling Stationary",
+            "description": "Recommended activity based on ACSM Guidelines 2019",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/cycling_stationary",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.75"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Nordic Walking",
+            "description": "Recommended activity based on ACSM Guidelines 2019",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/nordic_walking",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_bc_ecog2_moderate_fatigue",
+        "url": "http://example.org/fhir/PlanDefinition/profile_bc_ecog2_moderate_fatigue",
+        "status": "active",
+        "name": "Profile Bc Ecog2 Moderate Fatigue",
+        "title": "Breast cancer, ECOG 2, moderate fatigue",
+        "description": "Activity recommendations for Breast cancer, ECOG 2, moderate fatigue",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on NCCN Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Yoga Chair",
+            "description": "Recommended activity based on Supportive Care Cancer Journal",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_chair",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Breathing Exercises",
+            "description": "Recommended activity based on Cochrane Review",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.95"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Stretching",
+            "description": "Recommended activity based on ACSM Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/stretching",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_severe_fatigue",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_severe_fatigue",
+        "status": "active",
+        "name": "Profile Cancer Severe Fatigue",
+        "title": "Cancer with severe fatigue",
+        "description": "Activity recommendations for Cancer with severe fatigue",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Breathing Exercises",
+            "description": "Recommended activity based on NCCN Fatigue Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.95"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Relaxation",
+            "description": "Recommended activity based on Psycho-Oncology Journal",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/relaxation",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Stretching",
+            "description": "Recommended activity based on ACSM Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/stretching",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.7"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_high_bp",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_high_bp",
+        "status": "active",
+        "name": "Profile Cancer High Bp",
+        "title": "Cancer with hypertension",
+        "description": "Activity recommendations for Cancer with hypertension",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on AHA Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Yoga Gentle",
+            "description": "Recommended activity based on Hypertension Journal",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_gentle",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.75"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Tai Chi",
+            "description": "Recommended activity based on AHA Hypertension Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/tai_chi",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_immunocompromised",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_immunocompromised",
+        "status": "active",
+        "name": "Profile Cancer Immunocompromised",
+        "title": "Cancer with low immune function",
+        "description": "Activity recommendations for Cancer with low immune function",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on CDC Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Breathing Exercises",
+            "description": "Recommended activity based on Infection Control Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Yoga Chair",
+            "description": "Recommended activity based on Home-based exercise guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_chair",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_anemia",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_anemia",
+        "status": "active",
+        "name": "Profile Cancer Anemia",
+        "title": "Cancer with anemia",
+        "description": "Activity recommendations for Cancer with anemia",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on NCCN Anemia Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.7"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Yoga Chair",
+            "description": "Recommended activity based on Low-intensity exercise guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_chair",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Breathing Exercises",
+            "description": "Recommended activity based on NCCN Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_neuropathy",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_neuropathy",
+        "status": "active",
+        "name": "Profile Cancer Neuropathy",
+        "title": "Cancer with neuropathy",
+        "description": "Activity recommendations for Cancer with neuropathy",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Yoga Chair",
+            "description": "Recommended activity based on Neuropathy management guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_chair",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Balance Training",
+            "description": "Recommended activity based on Fall prevention guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/balance_training",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Stretching",
+            "description": "Recommended activity based on ACSM Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/stretching",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_bone_mets",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_bone_mets",
+        "status": "active",
+        "name": "Profile Cancer Bone Mets",
+        "title": "Cancer with bone metastases",
+        "description": "Activity recommendations for Cancer with bone metastases",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on Bone metastases guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.6"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Aquagym",
+            "description": "Recommended activity based on Low-impact exercise guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/aquagym",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.75"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Breathing Exercises",
+            "description": "Recommended activity based on Palliative care guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_lymphedema",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_lymphedema",
+        "status": "active",
+        "name": "Profile Cancer Lymphedema",
+        "title": "Cancer with lymphedema",
+        "description": "Activity recommendations for Cancer with lymphedema",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Aquagym",
+            "description": "Recommended activity based on Lymphedema management guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/aquagym",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Yoga Gentle",
+            "description": "Recommended activity based on ESMO Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_gentle",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on Lymphedema exercise guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_cancer_anxiety_depression",
+        "url": "http://example.org/fhir/PlanDefinition/profile_cancer_anxiety_depression",
+        "status": "active",
+        "name": "Profile Cancer Anxiety Depression",
+        "title": "Cancer with anxiety or depression",
+        "description": "Activity recommendations for Cancer with anxiety or depression",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Yoga Gentle",
+            "description": "Recommended activity based on Psycho-Oncology guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_gentle",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Walking Moderate",
+            "description": "Recommended activity based on Mental health exercise guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_moderate",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Tai Chi",
+            "description": "Recommended activity based on Mind-body intervention guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/tai_chi",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Relaxation",
+            "description": "Recommended activity based on Psycho-Oncology Journal",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/relaxation",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_active_chemo",
+        "url": "http://example.org/fhir/PlanDefinition/profile_active_chemo",
+        "status": "active",
+        "name": "Profile Active Chemo",
+        "title": "On active chemotherapy",
+        "description": "Activity recommendations for On active chemotherapy",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on NCCN Chemotherapy guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Yoga Chair",
+            "description": "Recommended activity based on Supportive care guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/yoga_chair",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.85"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Breathing Exercises",
+            "description": "Recommended activity based on NCCN Guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.9"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "profile_post_surgery",
+        "url": "http://example.org/fhir/PlanDefinition/profile_post_surgery",
+        "status": "active",
+        "name": "Profile Post Surgery",
+        "title": "Post-surgical recovery",
+        "description": "Activity recommendations for Post-surgical recovery",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+              "code": "clinical-protocol"
+            }
+          ]
+        },
+        "action": [
+          {
+            "title": "Breathing Exercises",
+            "description": "Recommended activity based on Post-operative guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/breathing_exercises",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.95"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Walking Light",
+            "description": "Recommended activity based on Early mobilization guidelines",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/walking_light",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.8"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Stretching",
+            "description": "Recommended activity based on Post-surgical rehabilitation",
+            "definitionCanonical": "http://example.org/fhir/ActivityDefinition/stretching",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "weight >= 0.75"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

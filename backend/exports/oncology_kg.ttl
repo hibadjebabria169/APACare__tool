@@ -1,0 +1,1607 @@
+# Oncology Knowledge Graph - RDF Export
+# Generated: 2026-02-11T15:30:36.238423
+# SNOMED-CT Version: 2024-01
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix snomed: <http://snomed.info/id/> .
+@prefix icd10: <http://purl.bioontology.org/ontology/ICD10/> .
+@prefix onco: <http://example.org/oncology-kg/> .
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+# Ontology Metadata
+onco:OncologyKnowledgeGraph a owl:Ontology ;
+    rdfs:label "Oncology Physical Activity Knowledge Graph" ;
+    dcterms:created "2026-02-11"^^xsd:date ;
+    owl:versionInfo "2024-01" .
+
+# ===== DISEASES =====
+onco:breast_cancer a onco:Disease ;
+    rdfs:label "Breast Cancer" ;
+    onco:snomedCode "254837009" ;
+    rdfs:seeAlso snomed:254837009 ;
+    onco:icd10Code "C50" ;
+    onco:snomedTerm "Malignant neoplasm of breast" .
+
+onco:lung_cancer a onco:Disease ;
+    rdfs:label "Lung Cancer" ;
+    onco:snomedCode "254637007" ;
+    rdfs:seeAlso snomed:254637007 ;
+    onco:icd10Code "C34" ;
+    onco:snomedTerm "Malignant neoplasm of lung" .
+
+onco:colorectal_cancer a onco:Disease ;
+    rdfs:label "Colorectal Cancer" ;
+    onco:snomedCode "363406005" ;
+    rdfs:seeAlso snomed:363406005 ;
+    onco:icd10Code "C18-C20" ;
+    onco:snomedTerm "Malignant tumor of colon" .
+
+onco:prostate_cancer a onco:Disease ;
+    rdfs:label "Prostate Cancer" ;
+    onco:snomedCode "399068003" ;
+    rdfs:seeAlso snomed:399068003 ;
+    onco:icd10Code "C61" ;
+    onco:snomedTerm "Malignant tumor of prostate" .
+
+onco:lymphoma a onco:Disease ;
+    rdfs:label "Lymphoma" ;
+    onco:snomedCode "118600007" ;
+    rdfs:seeAlso snomed:118600007 ;
+    onco:icd10Code "C81-C85" ;
+    onco:snomedTerm "Malignant lymphoma" .
+
+onco:leukemia a onco:Disease ;
+    rdfs:label "Leukemia" ;
+    onco:snomedCode "93143009" ;
+    rdfs:seeAlso snomed:93143009 ;
+    onco:icd10Code "C91-C95" ;
+    onco:snomedTerm "Leukemia" .
+
+onco:ovarian_cancer a onco:Disease ;
+    rdfs:label "Ovarian Cancer" ;
+    onco:snomedCode "363443007" ;
+    rdfs:seeAlso snomed:363443007 ;
+    onco:icd10Code "C56" ;
+    onco:snomedTerm "Malignant tumor of ovary" .
+
+onco:pancreatic_cancer a onco:Disease ;
+    rdfs:label "Pancreatic Cancer" ;
+    onco:snomedCode "363418001" ;
+    rdfs:seeAlso snomed:363418001 ;
+    onco:icd10Code "C25" ;
+    onco:snomedTerm "Malignant tumor of pancreas" .
+
+onco:gastric_cancer a onco:Disease ;
+    rdfs:label "Gastric Cancer" ;
+    onco:snomedCode "363349007" ;
+    rdfs:seeAlso snomed:363349007 ;
+    onco:icd10Code "C16" ;
+    onco:snomedTerm "Malignant tumor of stomach" .
+
+onco:melanoma a onco:Disease ;
+    rdfs:label "Melanoma" ;
+    onco:snomedCode "372244006" ;
+    rdfs:seeAlso snomed:372244006 ;
+    onco:icd10Code "C43" ;
+    onco:snomedTerm "Malignant melanoma" .
+
+onco:thyroid_cancer a onco:Disease ;
+    rdfs:label "Thyroid Cancer" ;
+    onco:snomedCode "363478007" ;
+    rdfs:seeAlso snomed:363478007 ;
+    onco:icd10Code "C73" ;
+    onco:snomedTerm "Malignant tumor of thyroid gland" .
+
+onco:bladder_cancer a onco:Disease ;
+    rdfs:label "Bladder Cancer" ;
+    onco:snomedCode "399326009" ;
+    rdfs:seeAlso snomed:399326009 ;
+    onco:icd10Code "C67" ;
+    onco:snomedTerm "Malignant tumor of urinary bladder" .
+
+onco:kidney_cancer a onco:Disease ;
+    rdfs:label "Kidney Cancer" ;
+    onco:snomedCode "363518003" ;
+    rdfs:seeAlso snomed:363518003 ;
+    onco:icd10Code "C64" ;
+    onco:snomedTerm "Malignant tumor of kidney" .
+
+onco:brain_cancer a onco:Disease ;
+    rdfs:label "Brain Cancer" ;
+    onco:snomedCode "428061005" ;
+    rdfs:seeAlso snomed:428061005 ;
+    onco:icd10Code "C71" ;
+    onco:snomedTerm "Malignant neoplasm of brain" .
+
+onco:cervical_cancer a onco:Disease ;
+    rdfs:label "Cervical Cancer" ;
+    onco:snomedCode "363354003" ;
+    rdfs:seeAlso snomed:363354003 ;
+    onco:icd10Code "C53" ;
+    onco:snomedTerm "Malignant tumor of cervix" .
+
+onco:esophageal_cancer a onco:Disease ;
+    rdfs:label "Esophageal Cancer" ;
+    onco:snomedCode "363402007" ;
+    rdfs:seeAlso snomed:363402007 ;
+    onco:icd10Code "C15" ;
+    onco:snomedTerm "Malignant tumor of esophagus" .
+
+onco:liver_cancer a onco:Disease ;
+    rdfs:label "Liver Cancer (HCC)" ;
+    onco:snomedCode "363358000" ;
+    rdfs:seeAlso snomed:363358000 ;
+    onco:icd10Code "C22" ;
+    onco:snomedTerm "Malignant tumor of liver" .
+
+onco:multiple_myeloma a onco:Disease ;
+    rdfs:label "Multiple Myeloma" ;
+    onco:snomedCode "109989006" ;
+    rdfs:seeAlso snomed:109989006 ;
+    onco:icd10Code "C90.0" ;
+    onco:snomedTerm "Multiple myeloma" .
+
+onco:head_neck_cancer a onco:Disease ;
+    rdfs:label "Head and Neck Cancer" ;
+    onco:snomedCode "255055008" ;
+    rdfs:seeAlso snomed:255055008 ;
+    onco:icd10Code "C00-C14" ;
+    onco:snomedTerm "Malignant tumor of head and neck" .
+
+# ===== CANCER STAGES =====
+onco:stage_i a onco:CancerStage ;
+    rdfs:label "Stage I" ;
+    onco:snomedCode "258215001" ;
+    rdfs:seeAlso snomed:258215001 ;
+    onco:snomedTerm "Stage I" .
+
+onco:stage_ii a onco:CancerStage ;
+    rdfs:label "Stage II" ;
+    onco:snomedCode "258219007" ;
+    rdfs:seeAlso snomed:258219007 ;
+    onco:snomedTerm "Stage II" .
+
+onco:stage_iii a onco:CancerStage ;
+    rdfs:label "Stage III" ;
+    onco:snomedCode "258224005" ;
+    rdfs:seeAlso snomed:258224005 ;
+    onco:snomedTerm "Stage III" .
+
+onco:stage_iv a onco:CancerStage ;
+    rdfs:label "Stage IV (Metastatic)" ;
+    onco:snomedCode "258228008" ;
+    rdfs:seeAlso snomed:258228008 ;
+    onco:snomedTerm "Stage IV" .
+
+onco:remission a onco:CancerStage ;
+    rdfs:label "In Remission" ;
+    onco:snomedCode "277022003" ;
+    rdfs:seeAlso snomed:277022003 ;
+    onco:snomedTerm "Remission phase" .
+
+onco:recurrence a onco:CancerStage ;
+    rdfs:label "Recurrence" ;
+    onco:snomedCode "25173007" ;
+    rdfs:seeAlso snomed:25173007 ;
+    onco:snomedTerm "Recurrent tumor" .
+
+onco:metastatic a onco:CancerStage ;
+    rdfs:label "Metastatic Disease" ;
+    onco:snomedCode "405843009" ;
+    rdfs:seeAlso snomed:405843009 ;
+    onco:snomedTerm "Secondary malignant neoplastic disease" .
+
+# ===== TREATMENTS =====
+onco:chemotherapy a onco:Treatment ;
+    rdfs:label "Chemotherapy" ;
+    onco:snomedCode "367336001" ;
+    rdfs:seeAlso snomed:367336001 ;
+    onco:snomedTerm "Chemotherapy" .
+
+onco:radiotherapy a onco:Treatment ;
+    rdfs:label "Radiotherapy" ;
+    onco:snomedCode "108290001" ;
+    rdfs:seeAlso snomed:108290001 ;
+    onco:snomedTerm "Radiation oncology" .
+
+onco:immunotherapy a onco:Treatment ;
+    rdfs:label "Immunotherapy" ;
+    onco:snomedCode "76334006" ;
+    rdfs:seeAlso snomed:76334006 ;
+    onco:snomedTerm "Immunotherapy" .
+
+onco:hormone_therapy a onco:Treatment ;
+    rdfs:label "Hormone Therapy" ;
+    onco:snomedCode "169413002" ;
+    rdfs:seeAlso snomed:169413002 ;
+    onco:snomedTerm "Hormone therapy" .
+
+onco:surgery a onco:Treatment ;
+    rdfs:label "Surgery" ;
+    onco:snomedCode "387713003" ;
+    rdfs:seeAlso snomed:387713003 ;
+    onco:snomedTerm "Surgical procedure" .
+
+onco:targeted_therapy a onco:Treatment ;
+    rdfs:label "Targeted Therapy" ;
+    onco:snomedCode "281789004" ;
+    rdfs:seeAlso snomed:281789004 ;
+    onco:snomedTerm "Targeted cancer therapy" .
+
+onco:palliative_care a onco:Treatment ;
+    rdfs:label "Palliative Care" ;
+    onco:snomedCode "103735009" ;
+    rdfs:seeAlso snomed:103735009 ;
+    onco:snomedTerm "Palliative care" .
+
+# ===== CHEMOTHERAPY DRUGS =====
+onco:doxorubicin a onco:ChemotherapyDrug ;
+    rdfs:label "Doxorubicin (Adriamycin)" ;
+    onco:snomedCode "372817009" ;
+    rdfs:seeAlso snomed:372817009 ;
+    onco:drugClass "anthracycline" ;
+    onco:hasSideEffect onco:cardiotoxicity ;
+    onco:hasSideEffect onco:fatigue_severe ;
+    onco:hasSideEffect onco:nausea ;
+    onco:hasSideEffect onco:neutropenia ;
+    onco:snomedTerm "Doxorubicin" .
+
+onco:paclitaxel a onco:ChemotherapyDrug ;
+    rdfs:label "Paclitaxel (Taxol)" ;
+    onco:snomedCode "387374002" ;
+    rdfs:seeAlso snomed:387374002 ;
+    onco:drugClass "taxane" ;
+    onco:hasSideEffect onco:neuropathy ;
+    onco:hasSideEffect onco:fatigue_moderate ;
+    onco:hasSideEffect onco:joint_pain ;
+    onco:hasSideEffect onco:neutropenia ;
+    onco:snomedTerm "Paclitaxel" .
+
+onco:cisplatin a onco:ChemotherapyDrug ;
+    rdfs:label "Cisplatin" ;
+    onco:snomedCode "387318005" ;
+    rdfs:seeAlso snomed:387318005 ;
+    onco:drugClass "platinum" ;
+    onco:hasSideEffect onco:nausea ;
+    onco:hasSideEffect onco:nephrotoxicity ;
+    onco:hasSideEffect onco:ototoxicity ;
+    onco:hasSideEffect onco:neuropathy ;
+    onco:snomedTerm "Cisplatin" .
+
+onco:carboplatin a onco:ChemotherapyDrug ;
+    rdfs:label "Carboplatin" ;
+    onco:snomedCode "386905006" ;
+    rdfs:seeAlso snomed:386905006 ;
+    onco:drugClass "platinum" ;
+    onco:hasSideEffect onco:thrombocytopenia ;
+    onco:hasSideEffect onco:neutropenia ;
+    onco:hasSideEffect onco:fatigue_moderate ;
+    onco:snomedTerm "Carboplatin" .
+
+onco:cyclophosphamide a onco:ChemotherapyDrug ;
+    rdfs:label "Cyclophosphamide" ;
+    onco:snomedCode "387420009" ;
+    rdfs:seeAlso snomed:387420009 ;
+    onco:drugClass "alkylating_agent" ;
+    onco:hasSideEffect onco:neutropenia ;
+    onco:hasSideEffect onco:nausea ;
+    onco:hasSideEffect onco:fatigue_moderate ;
+    onco:hasSideEffect onco:bladder_toxicity ;
+    onco:snomedTerm "Cyclophosphamide" .
+
+onco:fluorouracil a onco:ChemotherapyDrug ;
+    rdfs:label "5-Fluorouracil (5-FU)" ;
+    onco:snomedCode "387172005" ;
+    rdfs:seeAlso snomed:387172005 ;
+    onco:drugClass "antimetabolite" ;
+    onco:hasSideEffect onco:mucositis ;
+    onco:hasSideEffect onco:diarrhea ;
+    onco:hasSideEffect onco:hand_foot_syndrome ;
+    onco:hasSideEffect onco:fatigue_moderate ;
+    onco:snomedTerm "Fluorouracil" .
+
+onco:methotrexate a onco:ChemotherapyDrug ;
+    rdfs:label "Methotrexate" ;
+    onco:snomedCode "387381009" ;
+    rdfs:seeAlso snomed:387381009 ;
+    onco:drugClass "antimetabolite" ;
+    onco:hasSideEffect onco:mucositis ;
+    onco:hasSideEffect onco:hepatotoxicity ;
+    onco:hasSideEffect onco:fatigue_moderate ;
+    onco:hasSideEffect onco:neutropenia ;
+    onco:snomedTerm "Methotrexate" .
+
+onco:trastuzumab a onco:ChemotherapyDrug ;
+    rdfs:label "Trastuzumab (Herceptin)" ;
+    onco:snomedCode "414123001" ;
+    rdfs:seeAlso snomed:414123001 ;
+    onco:drugClass "targeted_therapy" ;
+    onco:hasSideEffect onco:cardiotoxicity ;
+    onco:hasSideEffect onco:fatigue_mild ;
+    onco:hasSideEffect onco:flu_like_symptoms ;
+    onco:snomedTerm "Trastuzumab" .
+
+onco:pembrolizumab a onco:ChemotherapyDrug ;
+    rdfs:label "Pembrolizumab (Keytruda)" ;
+    onco:snomedCode "716125002" ;
+    rdfs:seeAlso snomed:716125002 ;
+    onco:drugClass "immunotherapy" ;
+    onco:hasSideEffect onco:fatigue_moderate ;
+    onco:hasSideEffect onco:autoimmune_reactions ;
+    onco:hasSideEffect onco:thyroid_dysfunction ;
+    onco:snomedTerm "Pembrolizumab" .
+
+onco:tamoxifen a onco:ChemotherapyDrug ;
+    rdfs:label "Tamoxifen" ;
+    onco:snomedCode "373345002" ;
+    rdfs:seeAlso snomed:373345002 ;
+    onco:drugClass "hormone_therapy" ;
+    onco:hasSideEffect onco:hot_flashes ;
+    onco:hasSideEffect onco:joint_pain ;
+    onco:hasSideEffect onco:fatigue_mild ;
+    onco:hasSideEffect onco:thrombosis_risk ;
+    onco:snomedTerm "Tamoxifen" .
+
+# ===== SIDE EFFECTS =====
+onco:nausea a onco:SideEffect ;
+    rdfs:label "Nausea" ;
+    onco:snomedCode "422587007" ;
+    rdfs:seeAlso snomed:422587007 ;
+    onco:snomedTerm "Nausea" .
+
+onco:vomiting a onco:SideEffect ;
+    rdfs:label "Vomiting" ;
+    onco:snomedCode "422400008" ;
+    rdfs:seeAlso snomed:422400008 ;
+    onco:snomedTerm "Vomiting" .
+
+onco:neuropathy a onco:SideEffect ;
+    rdfs:label "Peripheral Neuropathy" ;
+    onco:snomedCode "386033004" ;
+    rdfs:seeAlso snomed:386033004 ;
+    onco:snomedTerm "Neuropathy" .
+
+onco:anemia a onco:SideEffect ;
+    rdfs:label "Anemia" ;
+    onco:snomedCode "271737000" ;
+    rdfs:seeAlso snomed:271737000 ;
+    onco:snomedTerm "Anemia" .
+
+onco:neutropenia a onco:SideEffect ;
+    rdfs:label "Neutropenia" ;
+    onco:snomedCode "165517008" ;
+    rdfs:seeAlso snomed:165517008 ;
+    onco:snomedTerm "Neutropenia" .
+
+onco:thrombocytopenia a onco:SideEffect ;
+    rdfs:label "Thrombocytopenia" ;
+    onco:snomedCode "302215000" ;
+    rdfs:seeAlso snomed:302215000 ;
+    onco:snomedTerm "Thrombocytopenic disorder" .
+
+onco:mucositis a onco:SideEffect ;
+    rdfs:label "Mucositis" ;
+    onco:snomedCode "26580005" ;
+    rdfs:seeAlso snomed:26580005 ;
+    onco:snomedTerm "Mucositis" .
+
+onco:alopecia a onco:SideEffect ;
+    rdfs:label "Hair Loss" ;
+    onco:snomedCode "56317004" ;
+    rdfs:seeAlso snomed:56317004 ;
+    onco:snomedTerm "Alopecia" .
+
+onco:lymphedema a onco:SideEffect ;
+    rdfs:label "Lymphedema" ;
+    onco:snomedCode "234097001" ;
+    rdfs:seeAlso snomed:234097001 ;
+    onco:snomedTerm "Lymphedema" .
+
+onco:cardiotoxicity a onco:SideEffect ;
+    rdfs:label "Cardiotoxicity" ;
+    onco:snomedCode "698247007" ;
+    rdfs:seeAlso snomed:698247007 ;
+    onco:snomedTerm "Cardiac toxicity" .
+
+# ===== CONDITIONS =====
+onco:ecog_0 a onco:Condition ;
+    rdfs:label "ECOG 0 - Fully Active" ;
+    onco:snomedCode "425389002" ;
+    rdfs:seeAlso snomed:425389002 ;
+    onco:snomedTerm "ECOG performance status grade 0" .
+
+onco:ecog_1 a onco:Condition ;
+    rdfs:label "ECOG 1 - Restricted but Ambulatory" ;
+    onco:snomedCode "422512005" ;
+    rdfs:seeAlso snomed:422512005 ;
+    onco:snomedTerm "ECOG performance status grade 1" .
+
+onco:ecog_2 a onco:Condition ;
+    rdfs:label "ECOG 2 - Ambulatory, Self-care" ;
+    onco:snomedCode "422894000" ;
+    rdfs:seeAlso snomed:422894000 ;
+    onco:snomedTerm "ECOG performance status grade 2" .
+
+onco:ecog_3 a onco:Condition ;
+    rdfs:label "ECOG 3 - Limited Self-care" ;
+    onco:snomedCode "423053003" ;
+    rdfs:seeAlso snomed:423053003 ;
+    onco:snomedTerm "ECOG performance status grade 3" .
+
+onco:ecog_4 a onco:Condition ;
+    rdfs:label "ECOG 4 - Completely Disabled" ;
+    onco:snomedCode "423237006" ;
+    rdfs:seeAlso snomed:423237006 ;
+    onco:snomedTerm "ECOG performance status grade 4" .
+
+onco:fatigue_none_mild a onco:Condition ;
+    rdfs:label "No/Mild Fatigue" ;
+    onco:snomedCode "84229001" ;
+    rdfs:seeAlso snomed:84229001 ;
+    onco:snomedTerm "Fatigue" .
+
+onco:fatigue_moderate a onco:Condition ;
+    rdfs:label "Moderate Fatigue" ;
+    onco:snomedCode "84229001" ;
+    rdfs:seeAlso snomed:84229001 ;
+    onco:snomedTerm "Fatigue" .
+
+onco:fatigue_severe a onco:Condition ;
+    rdfs:label "Severe Fatigue" ;
+    onco:snomedCode "84229001" ;
+    rdfs:seeAlso snomed:84229001 ;
+    onco:snomedTerm "Fatigue" .
+
+onco:pain_mild a onco:Condition ;
+    rdfs:label "Mild Pain" ;
+    onco:snomedCode "22253000" ;
+    rdfs:seeAlso snomed:22253000 ;
+    onco:snomedTerm "Pain" .
+
+onco:pain_moderate a onco:Condition ;
+    rdfs:label "Moderate Pain" ;
+    onco:snomedCode "22253000" ;
+    rdfs:seeAlso snomed:22253000 ;
+    onco:snomedTerm "Pain" .
+
+onco:pain_severe a onco:Condition ;
+    rdfs:label "Severe Pain" ;
+    onco:snomedCode "22253000" ;
+    rdfs:seeAlso snomed:22253000 ;
+    onco:snomedTerm "Pain" .
+
+onco:bone_pain a onco:Condition ;
+    rdfs:label "Bone Pain" ;
+    onco:snomedCode "12584003" ;
+    rdfs:seeAlso snomed:12584003 ;
+    onco:snomedTerm "Bone pain" .
+
+onco:dyspnea_mild a onco:Condition ;
+    rdfs:label "Mild Shortness of Breath" ;
+    onco:snomedCode "267036007" ;
+    rdfs:seeAlso snomed:267036007 ;
+    onco:snomedTerm "Dyspnea" .
+
+onco:dyspnea_moderate a onco:Condition ;
+    rdfs:label "Moderate Shortness of Breath" ;
+    onco:snomedCode "267036007" ;
+    rdfs:seeAlso snomed:267036007 ;
+    onco:snomedTerm "Dyspnea" .
+
+onco:dyspnea_severe a onco:Condition ;
+    rdfs:label "Severe Shortness of Breath" ;
+    onco:snomedCode "267036007" ;
+    rdfs:seeAlso snomed:267036007 ;
+    onco:snomedTerm "Dyspnea" .
+
+onco:hypertension_mild a onco:Condition ;
+    rdfs:label "Mild Hypertension (130-139/85-89)" ;
+    onco:snomedCode "38341003" ;
+    rdfs:seeAlso snomed:38341003 ;
+    onco:snomedTerm "Hypertensive disorder" .
+
+onco:hypertension_moderate a onco:Condition ;
+    rdfs:label "Moderate Hypertension (140-159/90-99)" ;
+    onco:snomedCode "38341003" ;
+    rdfs:seeAlso snomed:38341003 ;
+    onco:snomedTerm "Hypertensive disorder" .
+
+onco:hypertension_severe a onco:Condition ;
+    rdfs:label "Severe Hypertension (>=180/>=110)" ;
+    onco:snomedCode "38341003" ;
+    rdfs:seeAlso snomed:38341003 ;
+    onco:snomedTerm "Hypertensive disorder" .
+
+onco:low_wbc a onco:Condition ;
+    rdfs:label "Low White Cell Count (<4.0)" ;
+    onco:snomedCode "767002" ;
+    rdfs:seeAlso snomed:767002 ;
+    onco:snomedTerm "White blood cell count low" .
+
+onco:very_low_wbc a onco:Condition ;
+    rdfs:label "Very Low White Cell Count (<3.0)" ;
+    onco:snomedCode "165517008" ;
+    rdfs:seeAlso snomed:165517008 ;
+    onco:snomedTerm "Neutropenia" .
+
+onco:anemia_mild a onco:Condition ;
+    rdfs:label "Mild Anemia (Hgb 10-12)" ;
+    onco:snomedCode "271737000" ;
+    rdfs:seeAlso snomed:271737000 ;
+    onco:snomedTerm "Anemia" .
+
+onco:anemia_moderate a onco:Condition ;
+    rdfs:label "Moderate Anemia (Hgb 8-10)" ;
+    onco:snomedCode "271737000" ;
+    rdfs:seeAlso snomed:271737000 ;
+    onco:snomedTerm "Anemia" .
+
+onco:anemia_severe a onco:Condition ;
+    rdfs:label "Severe Anemia (Hgb <8)" ;
+    onco:snomedCode "271737000" ;
+    rdfs:seeAlso snomed:271737000 ;
+    onco:snomedTerm "Anemia" .
+
+onco:low_platelets a onco:Condition ;
+    rdfs:label "Low Platelet Count (<100k)" ;
+    onco:snomedCode "302215000" ;
+    rdfs:seeAlso snomed:302215000 ;
+    onco:snomedTerm "Thrombocytopenic disorder" .
+
+onco:dizziness a onco:Condition ;
+    rdfs:label "Dizziness" ;
+    onco:snomedCode "404640003" ;
+    rdfs:seeAlso snomed:404640003 ;
+    onco:snomedTerm "Dizziness" .
+
+onco:muscle_weakness a onco:Condition ;
+    rdfs:label "Muscle Weakness" ;
+    onco:snomedCode "26544005" ;
+    rdfs:seeAlso snomed:26544005 ;
+    onco:snomedTerm "Muscle weakness" .
+
+onco:joint_pain a onco:Condition ;
+    rdfs:label "Joint Pain" ;
+    onco:snomedCode "57676002" ;
+    rdfs:seeAlso snomed:57676002 ;
+    onco:snomedTerm "Arthralgia" .
+
+onco:anxiety a onco:Condition ;
+    rdfs:label "Anxiety" ;
+    onco:snomedCode "48694002" ;
+    rdfs:seeAlso snomed:48694002 ;
+    onco:snomedTerm "Anxiety" .
+
+onco:depression a onco:Condition ;
+    rdfs:label "Depression" ;
+    onco:snomedCode "35489007" ;
+    rdfs:seeAlso snomed:35489007 ;
+    onco:snomedTerm "Depressive disorder" .
+
+onco:insomnia a onco:Condition ;
+    rdfs:label "Insomnia" ;
+    onco:snomedCode "193462001" ;
+    rdfs:seeAlso snomed:193462001 ;
+    onco:snomedTerm "Insomnia" .
+
+# ===== ACTIVITIES =====
+onco:walking_light a onco:PhysicalActivity ;
+    rdfs:label "Light Walking 15-20 min" ;
+    onco:snomedCode "129006008" ;
+    rdfs:seeAlso snomed:129006008 ;
+    onco:intensity "light" ;
+    onco:metValue 2.5 ;
+    onco:snomedTerm "Walking" .
+
+onco:walking_moderate a onco:PhysicalActivity ;
+    rdfs:label "Moderate Walking 30 min" ;
+    onco:snomedCode "129006008" ;
+    rdfs:seeAlso snomed:129006008 ;
+    onco:intensity "moderate" ;
+    onco:metValue 3.5 ;
+    onco:snomedTerm "Walking" .
+
+onco:yoga_gentle a onco:PhysicalActivity ;
+    rdfs:label "Gentle Yoga 20-30 min" ;
+    onco:snomedCode "229065009" ;
+    rdfs:seeAlso snomed:229065009 ;
+    onco:intensity "light" ;
+    onco:metValue 2.5 ;
+    onco:snomedTerm "Exercise therapy" .
+
+onco:yoga_chair a onco:PhysicalActivity ;
+    rdfs:label "Chair Yoga 15-20 min" ;
+    onco:snomedCode "229065009" ;
+    rdfs:seeAlso snomed:229065009 ;
+    onco:intensity "very_light" ;
+    onco:metValue 2.0 ;
+    onco:snomedTerm "Exercise therapy" .
+
+onco:aquagym a onco:PhysicalActivity ;
+    rdfs:label "Aquagym 30 min" ;
+    onco:snomedCode "229071003" ;
+    rdfs:seeAlso snomed:229071003 ;
+    onco:intensity "moderate" ;
+    onco:metValue 4.0 ;
+    onco:snomedTerm "Aquatic physiotherapy" .
+
+onco:swimming_light a onco:PhysicalActivity ;
+    rdfs:label "Light Swimming 20 min" ;
+    onco:snomedCode "20461001" ;
+    rdfs:seeAlso snomed:20461001 ;
+    onco:intensity "light" ;
+    onco:metValue 3.0 ;
+    onco:snomedTerm "Swimming" .
+
+onco:breathing_exercises a onco:PhysicalActivity ;
+    rdfs:label "Breathing Exercises 15 min" ;
+    onco:snomedCode "304549008" ;
+    rdfs:seeAlso snomed:304549008 ;
+    onco:intensity "very_light" ;
+    onco:metValue 1.5 ;
+    onco:snomedTerm "Breathing exercise" .
+
+onco:stretching a onco:PhysicalActivity ;
+    rdfs:label "Stretching 15-20 min" ;
+    onco:snomedCode "225317005" ;
+    rdfs:seeAlso snomed:225317005 ;
+    onco:intensity "very_light" ;
+    onco:metValue 2.0 ;
+    onco:snomedTerm "Stretching" .
+
+onco:cycling_stationary a onco:PhysicalActivity ;
+    rdfs:label "Stationary Cycling 20 min" ;
+    onco:snomedCode "70665002" ;
+    rdfs:seeAlso snomed:70665002 ;
+    onco:intensity "moderate" ;
+    onco:metValue 4.0 ;
+    onco:snomedTerm "Bicycle exercise" .
+
+onco:strength_light a onco:PhysicalActivity ;
+    rdfs:label "Light Strength Training 15 min" ;
+    onco:snomedCode "266694003" ;
+    rdfs:seeAlso snomed:266694003 ;
+    onco:intensity "light" ;
+    onco:metValue 3.0 ;
+    onco:snomedTerm "Resistance training" .
+
+onco:relaxation a onco:PhysicalActivity ;
+    rdfs:label "Guided Relaxation 15 min" ;
+    onco:snomedCode "228557008" ;
+    rdfs:seeAlso snomed:228557008 ;
+    onco:intensity "very_light" ;
+    onco:metValue 1.0 ;
+    onco:snomedTerm "Relaxation therapy" .
+
+onco:tai_chi a onco:PhysicalActivity ;
+    rdfs:label "Tai Chi 20-30 min" ;
+    onco:snomedCode "229072005" ;
+    rdfs:seeAlso snomed:229072005 ;
+    onco:intensity "light" ;
+    onco:metValue 2.5 ;
+    onco:snomedTerm "Tai Chi" .
+
+onco:balance_training a onco:PhysicalActivity ;
+    rdfs:label "Balance Training 15 min" ;
+    onco:snomedCode "710841007" ;
+    rdfs:seeAlso snomed:710841007 ;
+    onco:intensity "light" ;
+    onco:metValue 2.0 ;
+    onco:snomedTerm "Balance training" .
+
+onco:aerobic_light a onco:PhysicalActivity ;
+    rdfs:label "Light Aerobic Exercise 20 min" ;
+    onco:snomedCode "229070002" ;
+    rdfs:seeAlso snomed:229070002 ;
+    onco:intensity "light" ;
+    onco:metValue 3.0 ;
+    onco:snomedTerm "Aerobic exercises" .
+
+onco:resistance_bands a onco:PhysicalActivity ;
+    rdfs:label "Resistance Band Exercise 15 min" ;
+    onco:snomedCode "266694003" ;
+    rdfs:seeAlso snomed:266694003 ;
+    onco:intensity "light" ;
+    onco:metValue 2.5 ;
+    onco:snomedTerm "Resistance training" .
+
+onco:nordic_walking a onco:PhysicalActivity ;
+    rdfs:label "Nordic Walking 30 min" ;
+    onco:snomedCode "129006008" ;
+    rdfs:seeAlso snomed:129006008 ;
+    onco:intensity "moderate" ;
+    onco:metValue 4.5 ;
+    onco:snomedTerm "Walking" .
+
+onco:pilates_gentle a onco:PhysicalActivity ;
+    rdfs:label "Gentle Pilates 20 min" ;
+    onco:snomedCode "229065009" ;
+    rdfs:seeAlso snomed:229065009 ;
+    onco:intensity "light" ;
+    onco:metValue 2.5 ;
+    onco:snomedTerm "Exercise therapy" .
+
+onco:qigong a onco:PhysicalActivity ;
+    rdfs:label "Qigong 20 min" ;
+    onco:snomedCode "229072005" ;
+    rdfs:seeAlso snomed:229072005 ;
+    onco:intensity "very_light" ;
+    onco:metValue 2.0 ;
+    onco:snomedTerm "Mind-body exercise" .
+
+onco:meditation a onco:PhysicalActivity ;
+    rdfs:label "Guided Meditation 15 min" ;
+    onco:snomedCode "103858009" ;
+    rdfs:seeAlso snomed:103858009 ;
+    onco:intensity "very_light" ;
+    onco:metValue 1.0 ;
+    onco:snomedTerm "Meditation" .
+
+onco:gardening_light a onco:PhysicalActivity ;
+    rdfs:label "Light Gardening 20-30 min" ;
+    onco:snomedCode "129010006" ;
+    rdfs:seeAlso snomed:129010006 ;
+    onco:intensity "light" ;
+    onco:metValue 2.5 ;
+    onco:snomedTerm "Gardening activity" .
+
+onco:dance_therapy a onco:PhysicalActivity ;
+    rdfs:label "Dance/Movement Therapy 20 min" ;
+    onco:snomedCode "229073000" ;
+    rdfs:seeAlso snomed:229073000 ;
+    onco:intensity "light" ;
+    onco:metValue 3.0 ;
+    onco:snomedTerm "Dance therapy" .
+
+onco:hydrotherapy a onco:PhysicalActivity ;
+    rdfs:label "Hydrotherapy 30 min" ;
+    onco:snomedCode "229071003" ;
+    rdfs:seeAlso snomed:229071003 ;
+    onco:intensity "light" ;
+    onco:metValue 2.5 ;
+    onco:snomedTerm "Hydrotherapy" .
+
+onco:seated_exercises a onco:PhysicalActivity ;
+    rdfs:label "Seated Exercises 15 min" ;
+    onco:snomedCode "229065009" ;
+    rdfs:seeAlso snomed:229065009 ;
+    onco:intensity "very_light" ;
+    onco:metValue 1.5 ;
+    onco:snomedTerm "Exercise therapy" .
+
+onco:arm_ergometer a onco:PhysicalActivity ;
+    rdfs:label "Arm Ergometer 15 min" ;
+    onco:snomedCode "229070002" ;
+    rdfs:seeAlso snomed:229070002 ;
+    onco:intensity "light" ;
+    onco:metValue 2.5 ;
+    onco:snomedTerm "Upper body exercise" .
+
+onco:recumbent_cycling a onco:PhysicalActivity ;
+    rdfs:label "Recumbent Cycling 20 min" ;
+    onco:snomedCode "70665002" ;
+    rdfs:seeAlso snomed:70665002 ;
+    onco:intensity "light" ;
+    onco:metValue 3.0 ;
+    onco:snomedTerm "Bicycle exercise" .
+
+onco:water_walking a onco:PhysicalActivity ;
+    rdfs:label "Water Walking 20 min" ;
+    onco:snomedCode "229071003" ;
+    rdfs:seeAlso snomed:229071003 ;
+    onco:intensity "light" ;
+    onco:metValue 3.0 ;
+    onco:snomedTerm "Aquatic exercise" .
+
+# ===== PATIENT PROFILES =====
+onco:profile_bc_ecog01_no_severe_fatigue a onco:PatientProfile ;
+    rdfs:label "Breast cancer, ECOG 0-1, no severe fatigue" ;
+    onco:hasCondition onco:breast_cancer ;
+    onco:hasCondition onco:ecog_0|ecog_1 ;
+    onco:hasCondition onco:fatigue_none_mild|fatigue_moderate ;
+    rdfs:comment "" .
+
+onco:profile_bc_ecog2_moderate_fatigue a onco:PatientProfile ;
+    rdfs:label "Breast cancer, ECOG 2, moderate fatigue" ;
+    onco:hasCondition onco:breast_cancer ;
+    onco:hasCondition onco:ecog_2 ;
+    onco:hasCondition onco:fatigue_moderate ;
+    rdfs:comment "" .
+
+onco:profile_cancer_severe_fatigue a onco:PatientProfile ;
+    rdfs:label "Cancer with severe fatigue" ;
+    onco:hasCondition onco:fatigue_severe ;
+    rdfs:comment "" .
+
+onco:profile_cancer_high_bp a onco:PatientProfile ;
+    rdfs:label "Cancer with hypertension" ;
+    onco:hasCondition onco:hypertension_moderate|hypertension_severe ;
+    rdfs:comment "" .
+
+onco:profile_cancer_immunocompromised a onco:PatientProfile ;
+    rdfs:label "Cancer with low immune function" ;
+    onco:hasCondition onco:low_wbc|very_low_wbc ;
+    rdfs:comment "" .
+
+onco:profile_cancer_anemia a onco:PatientProfile ;
+    rdfs:label "Cancer with anemia" ;
+    onco:hasCondition onco:anemia_moderate|anemia_severe ;
+    rdfs:comment "" .
+
+onco:profile_cancer_neuropathy a onco:PatientProfile ;
+    rdfs:label "Cancer with neuropathy" ;
+    onco:hasCondition onco:neuropathy ;
+    rdfs:comment "" .
+
+onco:profile_cancer_bone_mets a onco:PatientProfile ;
+    rdfs:label "Cancer with bone metastases" ;
+    onco:hasCondition onco:metastatic ;
+    onco:hasCondition onco:bone_pain ;
+    rdfs:comment "" .
+
+onco:profile_cancer_lymphedema a onco:PatientProfile ;
+    rdfs:label "Cancer with lymphedema" ;
+    onco:hasCondition onco:lymphedema ;
+    rdfs:comment "" .
+
+onco:profile_cancer_anxiety_depression a onco:PatientProfile ;
+    rdfs:label "Cancer with anxiety or depression" ;
+    onco:hasCondition onco:anxiety|depression ;
+    rdfs:comment "" .
+
+onco:profile_active_chemo a onco:PatientProfile ;
+    rdfs:label "On active chemotherapy" ;
+    onco:hasCondition onco:chemotherapy ;
+    rdfs:comment "" .
+
+onco:profile_post_surgery a onco:PatientProfile ;
+    rdfs:label "Post-surgical recovery" ;
+    onco:hasCondition onco:surgery ;
+    rdfs:comment "" .
+
+# ===== RECOMMENDATION EDGES =====
+onco:recommendation_0 a onco:Recommendation ;
+    onco:fromProfile onco:profile_bc_ecog01_no_severe_fatigue ;
+    onco:toActivity onco:walking_moderate ;
+    onco:weight 0.9 ;
+    onco:evidence "ACSM Guidelines 2019" ;
+    onco:snomedSupports snomed:129006008 ;
+.
+
+onco:recommendation_1 a onco:Recommendation ;
+    onco:fromProfile onco:profile_bc_ecog01_no_severe_fatigue ;
+    onco:toActivity onco:yoga_gentle ;
+    onco:weight 0.85 ;
+    onco:evidence "Oncology Nursing Forum" ;
+    onco:snomedSupports snomed:229065009 ;
+.
+
+onco:recommendation_2 a onco:Recommendation ;
+    onco:fromProfile onco:profile_bc_ecog01_no_severe_fatigue ;
+    onco:toActivity onco:aquagym ;
+    onco:weight 0.8 ;
+    onco:evidence "ESMO Clinical Practice" ;
+    onco:snomedSupports snomed:229071003 ;
+.
+
+onco:recommendation_3 a onco:Recommendation ;
+    onco:fromProfile onco:profile_bc_ecog01_no_severe_fatigue ;
+    onco:toActivity onco:cycling_stationary ;
+    onco:weight 0.75 ;
+    onco:evidence "ACSM Guidelines 2019" ;
+    onco:snomedSupports snomed:70665002 ;
+.
+
+onco:recommendation_4 a onco:Recommendation ;
+    onco:fromProfile onco:profile_bc_ecog01_no_severe_fatigue ;
+    onco:toActivity onco:nordic_walking ;
+    onco:weight 0.8 ;
+    onco:evidence "ACSM Guidelines 2019" ;
+    onco:snomedSupports snomed:129006008 ;
+.
+
+onco:recommendation_5 a onco:Recommendation ;
+    onco:fromProfile onco:profile_bc_ecog2_moderate_fatigue ;
+    onco:toActivity onco:walking_light ;
+    onco:weight 0.85 ;
+    onco:evidence "NCCN Guidelines" ;
+    onco:snomedSupports snomed:129006008 ;
+.
+
+onco:recommendation_6 a onco:Recommendation ;
+    onco:fromProfile onco:profile_bc_ecog2_moderate_fatigue ;
+    onco:toActivity onco:yoga_chair ;
+    onco:weight 0.9 ;
+    onco:evidence "Supportive Care Cancer Journal" ;
+    onco:snomedSupports snomed:229065009 ;
+.
+
+onco:recommendation_7 a onco:Recommendation ;
+    onco:fromProfile onco:profile_bc_ecog2_moderate_fatigue ;
+    onco:toActivity onco:breathing_exercises ;
+    onco:weight 0.95 ;
+    onco:evidence "Cochrane Review" ;
+    onco:snomedSupports snomed:304549008 ;
+.
+
+onco:recommendation_8 a onco:Recommendation ;
+    onco:fromProfile onco:profile_bc_ecog2_moderate_fatigue ;
+    onco:toActivity onco:stretching ;
+    onco:weight 0.85 ;
+    onco:evidence "ACSM Guidelines" ;
+    onco:snomedSupports snomed:225317005 ;
+.
+
+onco:recommendation_9 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_severe_fatigue ;
+    onco:toActivity onco:breathing_exercises ;
+    onco:weight 0.95 ;
+    onco:evidence "NCCN Fatigue Guidelines" ;
+    onco:snomedSupports snomed:304549008 ;
+.
+
+onco:recommendation_10 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_severe_fatigue ;
+    onco:toActivity onco:relaxation ;
+    onco:weight 0.9 ;
+    onco:evidence "Psycho-Oncology Journal" ;
+    onco:snomedSupports snomed:228557008 ;
+.
+
+onco:recommendation_11 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_severe_fatigue ;
+    onco:toActivity onco:stretching ;
+    onco:weight 0.7 ;
+    onco:evidence "ACSM Guidelines" ;
+    onco:snomedSupports snomed:225317005 ;
+.
+
+onco:recommendation_12 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_high_bp ;
+    onco:toActivity onco:walking_light ;
+    onco:weight 0.8 ;
+    onco:evidence "AHA Guidelines" ;
+    onco:snomedSupports snomed:129006008 ;
+.
+
+onco:recommendation_13 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_high_bp ;
+    onco:toActivity onco:yoga_gentle ;
+    onco:weight 0.75 ;
+    onco:evidence "Hypertension Journal" ;
+    onco:snomedSupports snomed:229065009 ;
+.
+
+onco:recommendation_14 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_high_bp ;
+    onco:toActivity onco:tai_chi ;
+    onco:weight 0.85 ;
+    onco:evidence "AHA Hypertension Guidelines" ;
+    onco:snomedSupports snomed:229072005 ;
+.
+
+onco:recommendation_15 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_immunocompromised ;
+    onco:toActivity onco:walking_light ;
+    onco:weight 0.85 ;
+    onco:evidence "CDC Guidelines" ;
+    onco:snomedSupports snomed:129006008 ;
+.
+
+onco:recommendation_16 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_immunocompromised ;
+    onco:toActivity onco:breathing_exercises ;
+    onco:weight 0.9 ;
+    onco:evidence "Infection Control Guidelines" ;
+    onco:snomedSupports snomed:304549008 ;
+.
+
+onco:recommendation_17 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_immunocompromised ;
+    onco:toActivity onco:yoga_chair ;
+    onco:weight 0.8 ;
+    onco:evidence "Home-based exercise guidelines" ;
+    onco:snomedSupports snomed:229065009 ;
+.
+
+onco:recommendation_18 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_anemia ;
+    onco:toActivity onco:walking_light ;
+    onco:weight 0.7 ;
+    onco:evidence "NCCN Anemia Guidelines" ;
+    onco:snomedSupports snomed:129006008 ;
+.
+
+onco:recommendation_19 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_anemia ;
+    onco:toActivity onco:yoga_chair ;
+    onco:weight 0.8 ;
+    onco:evidence "Low-intensity exercise guidelines" ;
+    onco:snomedSupports snomed:229065009 ;
+.
+
+onco:recommendation_20 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_anemia ;
+    onco:toActivity onco:breathing_exercises ;
+    onco:weight 0.85 ;
+    onco:evidence "NCCN Guidelines" ;
+    onco:snomedSupports snomed:304549008 ;
+.
+
+onco:recommendation_21 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_neuropathy ;
+    onco:toActivity onco:yoga_chair ;
+    onco:weight 0.85 ;
+    onco:evidence "Neuropathy management guidelines" ;
+    onco:snomedSupports snomed:229065009 ;
+.
+
+onco:recommendation_22 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_neuropathy ;
+    onco:toActivity onco:balance_training ;
+    onco:weight 0.9 ;
+    onco:evidence "Fall prevention guidelines" ;
+    onco:snomedSupports snomed:710841007 ;
+.
+
+onco:recommendation_23 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_neuropathy ;
+    onco:toActivity onco:stretching ;
+    onco:weight 0.8 ;
+    onco:evidence "ACSM Guidelines" ;
+    onco:snomedSupports snomed:225317005 ;
+.
+
+onco:recommendation_24 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_bone_mets ;
+    onco:toActivity onco:walking_light ;
+    onco:weight 0.6 ;
+    onco:evidence "Bone metastases guidelines" ;
+    onco:snomedSupports snomed:129006008 ;
+.
+
+onco:recommendation_25 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_bone_mets ;
+    onco:toActivity onco:aquagym ;
+    onco:weight 0.75 ;
+    onco:evidence "Low-impact exercise guidelines" ;
+    onco:snomedSupports snomed:229071003 ;
+.
+
+onco:recommendation_26 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_bone_mets ;
+    onco:toActivity onco:breathing_exercises ;
+    onco:weight 0.9 ;
+    onco:evidence "Palliative care guidelines" ;
+    onco:snomedSupports snomed:304549008 ;
+.
+
+onco:recommendation_27 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_lymphedema ;
+    onco:toActivity onco:aquagym ;
+    onco:weight 0.9 ;
+    onco:evidence "Lymphedema management guidelines" ;
+    onco:snomedSupports snomed:229071003 ;
+.
+
+onco:recommendation_28 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_lymphedema ;
+    onco:toActivity onco:yoga_gentle ;
+    onco:weight 0.85 ;
+    onco:evidence "ESMO Guidelines" ;
+    onco:snomedSupports snomed:229065009 ;
+.
+
+onco:recommendation_29 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_lymphedema ;
+    onco:toActivity onco:walking_light ;
+    onco:weight 0.8 ;
+    onco:evidence "Lymphedema exercise guidelines" ;
+    onco:snomedSupports snomed:129006008 ;
+.
+
+onco:recommendation_30 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_anxiety_depression ;
+    onco:toActivity onco:yoga_gentle ;
+    onco:weight 0.9 ;
+    onco:evidence "Psycho-Oncology guidelines" ;
+    onco:snomedSupports snomed:229065009 ;
+.
+
+onco:recommendation_31 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_anxiety_depression ;
+    onco:toActivity onco:walking_moderate ;
+    onco:weight 0.85 ;
+    onco:evidence "Mental health exercise guidelines" ;
+    onco:snomedSupports snomed:129006008 ;
+.
+
+onco:recommendation_32 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_anxiety_depression ;
+    onco:toActivity onco:tai_chi ;
+    onco:weight 0.85 ;
+    onco:evidence "Mind-body intervention guidelines" ;
+    onco:snomedSupports snomed:229072005 ;
+.
+
+onco:recommendation_33 a onco:Recommendation ;
+    onco:fromProfile onco:profile_cancer_anxiety_depression ;
+    onco:toActivity onco:relaxation ;
+    onco:weight 0.9 ;
+    onco:evidence "Psycho-Oncology Journal" ;
+    onco:snomedSupports snomed:228557008 ;
+.
+
+onco:recommendation_34 a onco:Recommendation ;
+    onco:fromProfile onco:profile_active_chemo ;
+    onco:toActivity onco:walking_light ;
+    onco:weight 0.8 ;
+    onco:evidence "NCCN Chemotherapy guidelines" ;
+    onco:snomedSupports snomed:129006008 ;
+.
+
+onco:recommendation_35 a onco:Recommendation ;
+    onco:fromProfile onco:profile_active_chemo ;
+    onco:toActivity onco:yoga_chair ;
+    onco:weight 0.85 ;
+    onco:evidence "Supportive care guidelines" ;
+    onco:snomedSupports snomed:229065009 ;
+.
+
+onco:recommendation_36 a onco:Recommendation ;
+    onco:fromProfile onco:profile_active_chemo ;
+    onco:toActivity onco:breathing_exercises ;
+    onco:weight 0.9 ;
+    onco:evidence "NCCN Guidelines" ;
+    onco:snomedSupports snomed:304549008 ;
+.
+
+onco:recommendation_37 a onco:Recommendation ;
+    onco:fromProfile onco:profile_post_surgery ;
+    onco:toActivity onco:breathing_exercises ;
+    onco:weight 0.95 ;
+    onco:evidence "Post-operative guidelines" ;
+    onco:snomedSupports snomed:304549008 ;
+.
+
+onco:recommendation_38 a onco:Recommendation ;
+    onco:fromProfile onco:profile_post_surgery ;
+    onco:toActivity onco:walking_light ;
+    onco:weight 0.8 ;
+    onco:evidence "Early mobilization guidelines" ;
+    onco:snomedSupports snomed:129006008 ;
+.
+
+onco:recommendation_39 a onco:Recommendation ;
+    onco:fromProfile onco:profile_post_surgery ;
+    onco:toActivity onco:stretching ;
+    onco:weight 0.75 ;
+    onco:evidence "Post-surgical rehabilitation" ;
+    onco:snomedSupports snomed:225317005 ;
+.
+
+# ===== CONTRAINDICATION EDGES =====
+onco:contraindication_0 a onco:Contraindication ;
+    onco:fromCondition onco:fatigue_severe ;
+    onco:toActivity onco:walking_moderate ;
+    onco:reason "Excessive exertion risk" ;
+    onco:snomedReason snomed:84229001 ;
+.
+
+onco:contraindication_1 a onco:Contraindication ;
+    onco:fromCondition onco:fatigue_severe ;
+    onco:toActivity onco:cycling_stationary ;
+    onco:reason "Cardiovascular strain" ;
+    onco:snomedReason snomed:84229001 ;
+.
+
+onco:contraindication_2 a onco:Contraindication ;
+    onco:fromCondition onco:fatigue_severe ;
+    onco:toActivity onco:aquagym ;
+    onco:reason "Drowning risk with severe fatigue" ;
+    onco:snomedReason snomed:84229001 ;
+.
+
+onco:contraindication_3 a onco:Contraindication ;
+    onco:fromCondition onco:fatigue_severe ;
+    onco:toActivity onco:nordic_walking ;
+    onco:reason "Excessive exertion risk" ;
+    onco:snomedReason snomed:84229001 ;
+.
+
+onco:contraindication_4 a onco:Contraindication ;
+    onco:fromCondition onco:hypertension_severe ;
+    onco:toActivity onco:cycling_stationary ;
+    onco:reason "BP spike risk" ;
+    onco:snomedReason snomed:395098000 ;
+.
+
+onco:contraindication_5 a onco:Contraindication ;
+    onco:fromCondition onco:hypertension_severe ;
+    onco:toActivity onco:strength_light ;
+    onco:reason "Valsalva maneuver risk" ;
+    onco:snomedReason snomed:395098000 ;
+.
+
+onco:contraindication_6 a onco:Contraindication ;
+    onco:fromCondition onco:hypertension_severe ;
+    onco:toActivity onco:nordic_walking ;
+    onco:reason "Cardiovascular strain" ;
+    onco:snomedReason snomed:395098000 ;
+.
+
+onco:contraindication_7 a onco:Contraindication ;
+    onco:fromCondition onco:very_low_wbc ;
+    onco:toActivity onco:aquagym ;
+    onco:reason "Infection risk in public pools" ;
+    onco:snomedReason snomed:409822003 ;
+.
+
+onco:contraindication_8 a onco:Contraindication ;
+    onco:fromCondition onco:very_low_wbc ;
+    onco:toActivity onco:swimming_light ;
+    onco:reason "Infection risk" ;
+    onco:snomedReason snomed:409822003 ;
+.
+
+onco:contraindication_9 a onco:Contraindication ;
+    onco:fromCondition onco:neutropenia ;
+    onco:toActivity onco:aquagym ;
+    onco:reason "High infection risk in water" ;
+    onco:snomedReason snomed:409822003 ;
+.
+
+onco:contraindication_10 a onco:Contraindication ;
+    onco:fromCondition onco:neutropenia ;
+    onco:toActivity onco:swimming_light ;
+    onco:reason "Infection risk in public facilities" ;
+    onco:snomedReason snomed:409822003 ;
+.
+
+onco:contraindication_11 a onco:Contraindication ;
+    onco:fromCondition onco:ecog_3 ;
+    onco:toActivity onco:walking_moderate ;
+    onco:reason "Functional limitation" ;
+    onco:snomedReason snomed:423053003 ;
+.
+
+onco:contraindication_12 a onco:Contraindication ;
+    onco:fromCondition onco:ecog_3 ;
+    onco:toActivity onco:cycling_stationary ;
+    onco:reason "Safety concern" ;
+    onco:snomedReason snomed:423053003 ;
+.
+
+onco:contraindication_13 a onco:Contraindication ;
+    onco:fromCondition onco:ecog_3 ;
+    onco:toActivity onco:aquagym ;
+    onco:reason "Safety concern" ;
+    onco:snomedReason snomed:423053003 ;
+.
+
+onco:contraindication_14 a onco:Contraindication ;
+    onco:fromCondition onco:ecog_4 ;
+    onco:toActivity onco:walking_light ;
+    onco:reason "Complete disability" ;
+    onco:snomedReason snomed:423237006 ;
+.
+
+onco:contraindication_15 a onco:Contraindication ;
+    onco:fromCondition onco:ecog_4 ;
+    onco:toActivity onco:yoga_gentle ;
+    onco:reason "Complete disability" ;
+    onco:snomedReason snomed:423237006 ;
+.
+
+onco:contraindication_16 a onco:Contraindication ;
+    onco:fromCondition onco:ecog_4 ;
+    onco:toActivity onco:stretching ;
+    onco:reason "Limited functional capacity" ;
+    onco:snomedReason snomed:423237006 ;
+.
+
+onco:contraindication_17 a onco:Contraindication ;
+    onco:fromCondition onco:anemia_severe ;
+    onco:toActivity onco:walking_moderate ;
+    onco:reason "Cardiac strain with low hemoglobin" ;
+    onco:snomedReason snomed:271737000 ;
+.
+
+onco:contraindication_18 a onco:Contraindication ;
+    onco:fromCondition onco:anemia_severe ;
+    onco:toActivity onco:cycling_stationary ;
+    onco:reason "Cardiac strain risk" ;
+    onco:snomedReason snomed:271737000 ;
+.
+
+onco:contraindication_19 a onco:Contraindication ;
+    onco:fromCondition onco:anemia_severe ;
+    onco:toActivity onco:aquagym ;
+    onco:reason "Excessive exertion risk" ;
+    onco:snomedReason snomed:271737000 ;
+.
+
+onco:contraindication_20 a onco:Contraindication ;
+    onco:fromCondition onco:low_platelets ;
+    onco:toActivity onco:strength_light ;
+    onco:reason "Bleeding risk with resistance training" ;
+    onco:snomedReason snomed:131148009 ;
+.
+
+onco:contraindication_21 a onco:Contraindication ;
+    onco:fromCondition onco:low_platelets ;
+    onco:toActivity onco:cycling_stationary ;
+    onco:reason "Risk of injury and bleeding" ;
+    onco:snomedReason snomed:131148009 ;
+.
+
+onco:contraindication_22 a onco:Contraindication ;
+    onco:fromCondition onco:thrombocytopenia ;
+    onco:toActivity onco:strength_light ;
+    onco:reason "Bleeding risk" ;
+    onco:snomedReason snomed:131148009 ;
+.
+
+onco:contraindication_23 a onco:Contraindication ;
+    onco:fromCondition onco:bone_pain ;
+    onco:toActivity onco:strength_light ;
+    onco:reason "Fracture risk with bone metastases" ;
+    onco:snomedReason snomed:473128000 ;
+.
+
+onco:contraindication_24 a onco:Contraindication ;
+    onco:fromCondition onco:bone_pain ;
+    onco:toActivity onco:nordic_walking ;
+    onco:reason "Fracture risk" ;
+    onco:snomedReason snomed:473128000 ;
+.
+
+onco:contraindication_25 a onco:Contraindication ;
+    onco:fromCondition onco:osteoporosis ;
+    onco:toActivity onco:strength_light ;
+    onco:reason "Fracture risk" ;
+    onco:snomedReason snomed:473128000 ;
+.
+
+onco:contraindication_26 a onco:Contraindication ;
+    onco:fromCondition onco:neuropathy ;
+    onco:toActivity onco:cycling_stationary ;
+    onco:reason "Balance and safety concern" ;
+    onco:snomedReason snomed:129839007 ;
+.
+
+onco:contraindication_27 a onco:Contraindication ;
+    onco:fromCondition onco:neuropathy ;
+    onco:toActivity onco:nordic_walking ;
+    onco:reason "Fall risk due to sensory loss" ;
+    onco:snomedReason snomed:129839007 ;
+.
+
+onco:contraindication_28 a onco:Contraindication ;
+    onco:fromCondition onco:dizziness ;
+    onco:toActivity onco:cycling_stationary ;
+    onco:reason "Fall risk" ;
+    onco:snomedReason snomed:129839007 ;
+.
+
+onco:contraindication_29 a onco:Contraindication ;
+    onco:fromCondition onco:dizziness ;
+    onco:toActivity onco:aquagym ;
+    onco:reason "Safety concern in water" ;
+    onco:snomedReason snomed:129839007 ;
+.
+
+onco:contraindication_30 a onco:Contraindication ;
+    onco:fromCondition onco:dyspnea_severe ;
+    onco:toActivity onco:walking_moderate ;
+    onco:reason "Respiratory distress risk" ;
+    onco:snomedReason snomed:267036007 ;
+.
+
+onco:contraindication_31 a onco:Contraindication ;
+    onco:fromCondition onco:dyspnea_severe ;
+    onco:toActivity onco:cycling_stationary ;
+    onco:reason "Respiratory strain" ;
+    onco:snomedReason snomed:267036007 ;
+.
+
+onco:contraindication_32 a onco:Contraindication ;
+    onco:fromCondition onco:dyspnea_severe ;
+    onco:toActivity onco:aquagym ;
+    onco:reason "Breathing difficulty in water" ;
+    onco:snomedReason snomed:267036007 ;
+.
+
+onco:contraindication_33 a onco:Contraindication ;
+    onco:fromCondition onco:heart_failure ;
+    onco:toActivity onco:cycling_stationary ;
+    onco:reason "Cardiac strain" ;
+    onco:snomedReason snomed:395098000 ;
+.
+
+onco:contraindication_34 a onco:Contraindication ;
+    onco:fromCondition onco:heart_failure ;
+    onco:toActivity onco:aquagym ;
+    onco:reason "Cardiac strain risk" ;
+    onco:snomedReason snomed:395098000 ;
+.
+
+onco:contraindication_35 a onco:Contraindication ;
+    onco:fromCondition onco:cardiotoxicity ;
+    onco:toActivity onco:cycling_stationary ;
+    onco:reason "Cardiac monitoring required" ;
+    onco:snomedReason snomed:395098000 ;
+.
+
+onco:contraindication_36 a onco:Contraindication ;
+    onco:fromCondition onco:cardiotoxicity ;
+    onco:toActivity onco:nordic_walking ;
+    onco:reason "Cardiac risk" ;
+    onco:snomedReason snomed:395098000 ;
+.
+
+# ===== ADAPTATION EDGES =====
+onco:adaptation_0 a onco:Adaptation ;
+    onco:forCondition onco:fatigue_moderate ;
+    onco:forActivity onco:walking_moderate ;
+    onco:adaptationText "Reduce to 20 min, add rest breaks" ;
+    onco:snomedCondition snomed:84229001 ;
+.
+
+onco:adaptation_1 a onco:Adaptation ;
+    onco:forCondition onco:fatigue_moderate ;
+    onco:forActivity onco:yoga_gentle ;
+    onco:adaptationText "Include more restorative poses" ;
+    onco:snomedCondition snomed:84229001 ;
+.
+
+onco:adaptation_2 a onco:Adaptation ;
+    onco:forCondition onco:hypertension_mild ;
+    onco:forActivity onco:walking_moderate ;
+    onco:adaptationText "Keep pace gentle, monitor symptoms" ;
+    onco:snomedCondition snomed:38341003 ;
+.
+
+onco:adaptation_3 a onco:Adaptation ;
+    onco:forCondition onco:hypertension_moderate ;
+    onco:forActivity onco:walking_light ;
+    onco:adaptationText "Limit to 15 min, avoid hills" ;
+    onco:snomedCondition snomed:38341003 ;
+.
+
+onco:adaptation_4 a onco:Adaptation ;
+    onco:forCondition onco:low_wbc ;
+    onco:forActivity onco:walking_light ;
+    onco:adaptationText "Outdoor only, avoid crowded areas" ;
+    onco:snomedCondition snomed:767002 ;
+.
+
+onco:adaptation_5 a onco:Adaptation ;
+    onco:forCondition onco:ecog_2 ;
+    onco:forActivity onco:yoga_gentle ;
+    onco:adaptationText "Chair yoga recommended" ;
+    onco:snomedCondition snomed:422894000 ;
+.
+
+onco:adaptation_6 a onco:Adaptation ;
+    onco:forCondition onco:breast_cancer ;
+    onco:forActivity onco:strength_light ;
+    onco:adaptationText "Avoid affected side exercises initially" ;
+    onco:snomedCondition snomed:254837009 ;
+.
+
+onco:adaptation_7 a onco:Adaptation ;
+    onco:forCondition onco:lymphedema ;
+    onco:forActivity onco:strength_light ;
+    onco:adaptationText "Use compression sleeve, light weights only" ;
+    onco:snomedCondition snomed:234097001 ;
+.
+
+onco:adaptation_8 a onco:Adaptation ;
+    onco:forCondition onco:lymphedema ;
+    onco:forActivity onco:yoga_gentle ;
+    onco:adaptationText "Elevate affected limb during poses" ;
+    onco:snomedCondition snomed:234097001 ;
+.
+
+onco:adaptation_9 a onco:Adaptation ;
+    onco:forCondition onco:neuropathy ;
+    onco:forActivity onco:walking_light ;
+    onco:adaptationText "Use supportive footwear, flat surfaces only" ;
+    onco:snomedCondition snomed:386033004 ;
+.
+
+onco:adaptation_10 a onco:Adaptation ;
+    onco:forCondition onco:neuropathy ;
+    onco:forActivity onco:balance_training ;
+    onco:adaptationText "Hold onto support, seated exercises preferred" ;
+    onco:snomedCondition snomed:386033004 ;
+.
+
+onco:adaptation_11 a onco:Adaptation ;
+    onco:forCondition onco:anemia_mild ;
+    onco:forActivity onco:walking_moderate ;
+    onco:adaptationText "Reduce duration to 20 min, monitor fatigue" ;
+    onco:snomedCondition snomed:271737000 ;
+.
+
+onco:adaptation_12 a onco:Adaptation ;
+    onco:forCondition onco:bone_pain ;
+    onco:forActivity onco:walking_light ;
+    onco:adaptationText "Use walking aid if needed, flat surfaces only" ;
+    onco:snomedCondition snomed:12584003 ;
+.
+
+onco:adaptation_13 a onco:Adaptation ;
+    onco:forCondition onco:bone_pain ;
+    onco:forActivity onco:aquagym ;
+    onco:adaptationText "Avoid jumping movements, gentle floating" ;
+    onco:snomedCondition snomed:12584003 ;
+.
+
+onco:adaptation_14 a onco:Adaptation ;
+    onco:forCondition onco:dyspnea_mild ;
+    onco:forActivity onco:walking_light ;
+    onco:adaptationText "Slow pace, take breaks as needed" ;
+    onco:snomedCondition snomed:267036007 ;
+.
+
+onco:adaptation_15 a onco:Adaptation ;
+    onco:forCondition onco:dyspnea_moderate ;
+    onco:forActivity onco:breathing_exercises ;
+    onco:adaptationText "Seated position, shorter sessions" ;
+    onco:snomedCondition snomed:267036007 ;
+.
+
+onco:adaptation_16 a onco:Adaptation ;
+    onco:forCondition onco:anxiety ;
+    onco:forActivity onco:yoga_gentle ;
+    onco:adaptationText "Include longer relaxation periods" ;
+    onco:snomedCondition snomed:48694002 ;
+.
+
+onco:adaptation_17 a onco:Adaptation ;
+    onco:forCondition onco:insomnia ;
+    onco:forActivity onco:relaxation ;
+    onco:adaptationText "Schedule in evening, avoid stimulating activities" ;
+    onco:snomedCondition snomed:193462001 ;
+.
+
+onco:adaptation_18 a onco:Adaptation ;
+    onco:forCondition onco:joint_pain ;
+    onco:forActivity onco:walking_light ;
+    onco:adaptationText "Supportive footwear, avoid stairs" ;
+    onco:snomedCondition snomed:57676002 ;
+.
+
+onco:adaptation_19 a onco:Adaptation ;
+    onco:forCondition onco:joint_pain ;
+    onco:forActivity onco:aquagym ;
+    onco:adaptationText "Warm water preferred, gentle movements" ;
+    onco:snomedCondition snomed:57676002 ;
+.
+
+onco:adaptation_20 a onco:Adaptation ;
+    onco:forCondition onco:osteoarthritis ;
+    onco:forActivity onco:cycling_stationary ;
+    onco:adaptationText "Low resistance, shorter duration" ;
+    onco:snomedCondition snomed:396275006 ;
+.
+
+onco:adaptation_21 a onco:Adaptation ;
+    onco:forCondition onco:type2_diabetes ;
+    onco:forActivity onco:walking_moderate ;
+    onco:adaptationText "Monitor blood glucose before/after, carry snack" ;
+    onco:snomedCondition snomed:44054006 ;
+.
+
+onco:adaptation_22 a onco:Adaptation ;
+    onco:forCondition onco:obesity ;
+    onco:forActivity onco:aquagym ;
+    onco:adaptationText "Extended warm-up, focus on low-impact" ;
+    onco:snomedCondition snomed:414916001 ;
+.
