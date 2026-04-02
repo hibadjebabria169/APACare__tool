@@ -400,28 +400,7 @@ class _RecommendationCard extends StatelessWidget {
               ],
 
               const SizedBox(height: 12),
-              Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.grey.withOpacity(0.05),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Row(
-                  children: [
-                    Icon(Icons.location_on, size: 16, color: Colors.grey[600]),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(recommendation.centerName, style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 12)),
-                          Text(recommendation.centerAddress, style: TextStyle(fontSize: 11, color: Colors.grey[600])),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              _buildCenterSection(),
 
               if (!isStarted) ...[
                 const SizedBox(height: 12),
@@ -437,6 +416,85 @@ class _RecommendationCard extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildCenterSection() {
+    final rc = recommendation.regionalCenter;
+    final displayName = rc != null ? rc.name : recommendation.centerName;
+    final displayAddress = rc != null ? rc.address : recommendation.centerAddress;
+
+    return Container(
+      padding: const EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: rc != null
+            ? Colors.teal.withOpacity(0.04)
+            : Colors.grey.withOpacity(0.05),
+        borderRadius: BorderRadius.circular(8),
+        border: rc != null
+            ? Border.all(color: Colors.teal.withOpacity(0.25))
+            : null,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(Icons.location_on, size: 16,
+                  color: rc != null ? Colors.teal[600] : Colors.grey[600]),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(displayName,
+                        style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 12,
+                          color: rc != null ? Colors.teal[800] : null,
+                        )),
+                    Text(displayAddress,
+                        style: TextStyle(fontSize: 11, color: Colors.grey[600])),
+                  ],
+                ),
+              ),
+              if (rc != null)
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
+                  decoration: BoxDecoration(
+                    color: Colors.teal.withOpacity(0.12),
+                    borderRadius: BorderRadius.circular(6),
+                  ),
+                  child: Text(
+                    'Cancer-adapted',
+                    style: TextStyle(
+                        fontSize: 9,
+                        color: Colors.teal[700],
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+            ],
+          ),
+          if (rc != null && rc.url.isNotEmpty) ...[
+            const SizedBox(height: 6),
+            Row(
+              children: [
+                Icon(Icons.link, size: 12, color: Colors.teal[400]),
+                const SizedBox(width: 4),
+                Flexible(
+                  child: SelectableText(
+                    rc.url,
+                    style: TextStyle(
+                        fontSize: 10,
+                        color: Colors.teal[600],
+                        decoration: TextDecoration.underline),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ],
       ),
     );
   }

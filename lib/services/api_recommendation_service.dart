@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import '../models/patient_state.dart';
+import '../models/regional_center.dart';
+import 'regional_centers_service.dart';
 
 class ApiRecommendationService extends ChangeNotifier {
   static const String baseUrl = 'http://localhost:8000';
@@ -54,6 +56,8 @@ class ApiRecommendationService extends ChangeNotifier {
 
         _previousParams = _patientToJson(patient);
 
+        await _attachRegionalCenters(_recommendations);
+
         _isLoading = false;
         notifyListeners();
         return _recommendations;
@@ -66,6 +70,8 @@ class ApiRecommendationService extends ChangeNotifier {
 
       debugPrint('API call failed: $e. Using fallback.');
       _recommendations = _generateFallbackRecommendations(patient);
+
+      await _attachRegionalCenters(_recommendations);
 
       notifyListeners();
       return _recommendations;
@@ -93,6 +99,19 @@ class ApiRecommendationService extends ChangeNotifier {
       'intensity_preference': patient.preferences.intensityPref.name,
       'environment_preference': patient.preferences.environmentPref.name,
     };
+  }
+
+  Future<void> _attachRegionalCenters(List<LLMRecommendation> recommendations) async {
+    final centersService = RegionalCentersService();
+    final futures = recommendations
+        .map((r) => centersService.fetchCentersForActivity(r.activityType))
+        .toList();
+    final results = await Future.wait(futures);
+    for (int i = 0; i < recommendations.length; i++) {
+      if (results[i].isNotEmpty) {
+        recommendations[i].regionalCenter = results[i].first;
+      }
+    }
   }
 
   List<LLMRecommendation> _generateFallbackRecommendations(PatientState patient) {
@@ -226,6 +245,7 @@ class LLMRecommendation {
   final String centerAddress;
   final SnomedCoding? snomed;
   bool isStarted;
+  RegionalCenter? regionalCenter;
 
   LLMRecommendation({
     required this.id,
