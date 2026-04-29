@@ -15,11 +15,11 @@ except ImportError:
     print("Warning: sentence-transformers not installed. Using fallback similarity.")
 
 try:
-    from transformers import pipeline
-    TRANSFORMERS_AVAILABLE = True
+    from openai import OpenAI
+    OPENAI_AVAILABLE = True
 except ImportError:
-    TRANSFORMERS_AVAILABLE = False
-    print("Warning: transformers not installed. Using rule-based fallback.")
+    OPENAI_AVAILABLE = False
+    print("Warning: openai not installed. Using rule-based fallback.")
 
 app = FastAPI(
     title="APACare Recommendation API",
@@ -234,17 +234,12 @@ class LLMRecommender:
             except Exception as e:
                 print(f"Could not load embedding model: {e}")
 
-        if TRANSFORMERS_AVAILABLE:
+        if OPENAI_AVAILABLE:
             try:
-
-                self.llm = pipeline(
-                    "text2text-generation",
-                    model="google/flan-t5-small",
-                    max_length=150
-                )
-                print("Loaded LLM: google/flan-t5-small")
+                self.llm = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+                print("Loaded LLM: gpt-4-0613 (OpenAI)")
             except Exception as e:
-                print(f"Could not load LLM: {e}")
+                print(f"Could not initialize OpenAI client: {e}")
 
     def compute_patient_embedding(self, patient: PatientData) -> np.ndarray:
         profile_text = self._patient_to_text(patient)
@@ -315,6 +310,44 @@ class LLMRecommender:
 
         return float(utility)
 
+    def rerank_with_gpt4(self, patient: PatientData, activities: List[Dict]) -> List[Dict]:
+        if not self.llm or not activities:
+            return activities
+
+        activity_list = "\n".join([
+            f"{i+1}. {a['activity']['label']} (intensity: {a['activity']['intensity']}, MET: {a['activity']['met']})"
+            for i, a in enumerate(activities)
+        ])
+
+        prompt = (
+            f"You are an oncology exercise specialist. Rate each activity from 0.0 to 1.0 "
+            f"for clinical suitability for this patient:\n"
+            f"- Disease: {patient.disease}\n"
+            f"- ECOG performance status: {patient.ecog}\n"
+            f"- Fatigue: {'severe' if patient.fatigue > 0.6 else 'moderate' if patient.fatigue > 0.3 else 'mild'}\n"
+            f"- Blood pressure: {patient.systolic_bp}/{patient.diastolic_bp} mmHg\n"
+            f"- Chemotherapy cycle: {patient.chemo_cycle}\n\n"
+            f"Activities to rate:\n{activity_list}\n\n"
+            f"Respond with only valid JSON in this format: {{\"scores\": [score1, score2, ...]}}"
+        )
+
+        try:
+            response = self.llm.chat.completions.create(
+                model="gpt-4-0613",
+                messages=[{"role": "user", "content": prompt}],
+                max_tokens=100
+            )
+            result = json.loads(response.choices[0].message.content)
+            gpt_scores = result["scores"]
+            for i, act in enumerate(activities):
+                if i < len(gpt_scores):
+                    act['utility'] = 0.7 * act['utility'] + 0.3 * float(gpt_scores[i])
+            activities.sort(key=lambda x: x['utility'], reverse=True)
+        except Exception:
+            pass
+
+        return activities
+
     def generate_explanation(self, patient: PatientData, recommendations: List[Dict]) -> str:
         if self.llm:
             prompt = (
@@ -324,8 +357,12 @@ class LLMRecommender:
                 f"Be brief and focus on safety and benefits."
             )
             try:
-                result = self.llm(prompt)[0]['generated_text']
-                return result
+                response = self.llm.chat.completions.create(
+                    model="gpt-4-0613",
+                    messages=[{"role": "user", "content": prompt}],
+                    max_tokens=150
+                )
+                return response.choices[0].message.content
             except Exception as e:
                 return f"Recommendations based on your health profile and medical guidelines."
         else:
@@ -462,7 +499,7 @@ class RecommendationService:
             })
 
         scored_activities.sort(key=lambda x: x['utility'], reverse=True)
-        top_activities = scored_activities[:6]
+        top_activities = self.llm_recommender.rerank_with_gpt4(patient, scored_activities[:6])
 
         recommendations = []
         for idx, act in enumerate(top_activities):
@@ -554,7 +591,7 @@ async def root():
         "version": "1.0.0",
         "status": "running",
         "embeddings_available": EMBEDDINGS_AVAILABLE,
-        "llm_available": TRANSFORMERS_AVAILABLE
+        "llm_available": OPENAI_AVAILABLE
     }
 
 @app.post("/recommendations", response_model=RecommendationResponse)
